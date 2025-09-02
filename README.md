@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NaturalSkin - Remedios Naturales para el Cuidado de tu Piel</title>
     <meta name="description" content="Descubre los mejores remedios naturales para el cuidado de la piel según tu tipo: seca, grasa, mixta. Soluciones para acné, puntos negros, manchas y más.">
-    <meta name="keywords" content="remedios naturales, cuidado de la piel, piel seca, piel grasa, acné, puntos negros, manchas, belleza natural, skincare natural">
+    <meta name="keywords" content="remedios naturales, cuidado de la piel, piel seca, piel grasa, piel mixta, acné, puntos negros, manchas, belleza natural, skincare natural">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -41,6 +41,9 @@
             color: white;
             padding: 20px 0;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
         
         .header-content {
@@ -157,8 +160,19 @@
         
         .type-card i {
             font-size: 50px;
-            color: var(--primary);
             margin-bottom: 20px;
+        }
+        
+        .dry-skin-icon {
+            color: #8d6e63; /* Marrón suave para piel seca */
+        }
+        
+        .oily-skin-icon {
+            color: #78909c; /* Gris azulado para piel grasa */
+        }
+        
+        .mixed-skin-icon {
+            color: #81c784; /* Verde suave para piel mixta */
         }
         
         .type-card h3 {
@@ -184,6 +198,16 @@
             text-decoration: none;
             font-weight: 600;
             margin-bottom: 30px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background-color: white;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+        
+        .back-btn:hover {
+            background-color: var(--primary);
+            color: white;
         }
         
         .back-btn i {
@@ -202,13 +226,29 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        
+        .problem-card:hover {
+            transform: translateY(-5px);
         }
         
         .problem-header {
-            background-color: var(--secondary);
             padding: 20px;
             text-align: center;
             color: white;
+        }
+        
+        .dry-skin-header {
+            background: linear-gradient(135deg, #8d6e63 0%, #6d4c41 100%);
+        }
+        
+        .oily-skin-header {
+            background: linear-gradient(135deg, #78909c 0%, #546e7a 100%);
+        }
+        
+        .mixed-skin-header {
+            background: linear-gradient(135deg, #81c784 0%, #66bb6a 100%);
         }
         
         .problem-content {
@@ -391,7 +431,7 @@
                         <li><a href="#" onclick="showSection('home')">Inicio</a></li>
                         <li><a href="#" onclick="showSection('dry-skin')">Piel Seca</a></li>
                         <li><a href="#" onclick="showSection('oily-skin')">Piel Grasa</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#" onclick="showSection('mixed-skin')">Piel Mixta</a></li>
                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </nav>
@@ -405,7 +445,7 @@
             <div class="hero-content">
                 <h1>Remedios Naturales para el Cuidado de tu Piel</h1>
                 <p>Descubre los mejores tratamientos naturales según tu tipo de piel. Soluciones efectivas para acné, puntos negros, manchas y más.</p>
-                <a href="#" class="btn">Comenzar ahora</a>
+                <a href="#" class="btn">Explorar Tratamientos</a>
             </div>
         </div>
     </section>
@@ -415,17 +455,17 @@
             <h2 class="section-title">Selecciona tu Tipo de Piel</h2>
             <div class="types-grid">
                 <div class="type-card" onclick="showSection('dry-skin')">
-                    <i class="fas fa-hand-holding-water"></i>
+                    <i class="fas fa-hand-holding-water dry-skin-icon"></i>
                     <h3>Piel Seca</h3>
                     <p>Remedios naturales para hidratar, nutrir y rejuvenecer la piel seca. Soluciones para descamación, irritación y sensibilidad.</p>
                 </div>
                 <div class="type-card" onclick="showSection('oily-skin')">
-                    <i class="fas fa-oil-can"></i>
+                    <i class="fas fa-oil-can oily-skin-icon"></i>
                     <h3>Piel Grasa</h3>
                     <p>Tratamientos naturales para regular el sebo, minimizar poros y combatir el acné. Soluciones para brillos y puntos negros.</p>
                 </div>
-                <div class="type-card">
-                    <i class="fas fa-blender"></i>
+                <div class="type-card" onclick="showSection('mixed-skin')">
+                    <i class="fas fa-blender mixed-skin-icon"></i>
                     <h3>Piel Mixta</h3>
                     <p>Balancea las zonas grasas y secas de tu rostro con estos remedios naturales. Equilibrio perfecto para tu piel.</p>
                 </div>
@@ -438,10 +478,13 @@
         <div class="container">
             <a href="#" class="back-btn" onclick="showSection('home')"><i class="fas fa-arrow-left"></i> Volver al Inicio</a>
             <h2 class="section-title">Remedios Naturales para Piel Seca</h2>
+            <p class="section-description" style="text-align: center; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                La piel seca necesita hidratación intensa y nutrición profunda. Descubre estos remedios naturales para restaurar la humedad natural de tu piel y lograr un aspecto radiante.
+            </p>
             
             <div class="problems-grid">
                 <div class="problem-card">
-                    <div class="problem-header">
+                    <div class="problem-header dry-skin-header">
                         <h3>Hidratación Intensa</h3>
                     </div>
                     <div class="problem-content">
@@ -456,7 +499,7 @@
                 </div>
                 
                 <div class="problem-card">
-                    <div class="problem-header">
+                    <div class="problem-header dry-skin-header">
                         <h3>Descamación</h3>
                     </div>
                     <div class="problem-content">
@@ -471,7 +514,7 @@
                 </div>
                 
                 <div class="problem-card">
-                    <div class="problem-header">
+                    <div class="problem-header dry-skin-header">
                         <h3>Irritación y Enrojecimiento</h3>
                     </div>
                     <div class="problem-content">
@@ -486,7 +529,7 @@
                 </div>
                 
                 <div class="problem-card">
-                    <div class="problem-header">
+                    <div class="problem-header dry-skin-header">
                         <h3>Nutrición Profunda</h3>
                     </div>
                     <div class="problem-content">
@@ -499,6 +542,36 @@
                         <p>Mezcla todos los ingredientes. Aplica sobre el rostro con suaves masajes circulares antes de dormir. No enjuagues.</p>
                     </div>
                 </div>
+                
+                <div class="problem-card">
+                    <div class="problem-header dry-skin-header">
+                        <h3>Limpieza Suave</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Leche de Avena Limpiadora</h3>
+                        <ul>
+                            <li>4 cucharadas de avena</li>
+                            <li>1 taza de agua</li>
+                            <li>1 cucharada de miel</li>
+                        </ul>
+                        <p>Deja la avena en remojo durante 2 horas. Cuela y añade la miel. Usa como leche limpiadora por las mañanas y noches.</p>
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-header dry-skin-header">
+                        <h3>Tonificación</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Tónico de Rosas Hidratante</h3>
+                        <ul>
+                            <li>1 puñado de pétalos de rosa</li>
+                            <li>1 taza de agua mineral</li>
+                            <li>2 cucharadas de agua de hamamelis</li>
+                        </ul>
+                        <p>Hierve los pétalos de rosa en el agua durante 5 minutos. Deja enfriar, cuela y añade el hamamelis. Aplica con un algodón.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -508,10 +581,13 @@
         <div class="container">
             <a href="#" class="back-btn" onclick="showSection('home')"><i class="fas fa-arrow-left"></i> Volver al Inicio</a>
             <h2 class="section-title">Remedios Naturales para Piel Grasa</h2>
+            <p class="section-description" style="text-align: center; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                La piel grasa requiere regulación del sebo, limpieza profunda y minimización de poros. Estos tratamientos naturales te ayudarán a controlar el brillo y prevenir imperfecciones.
+            </p>
             
             <div class="problems-grid">
                 <div class="problem-card">
-                    <div class="problem-header">
+                    <div class="problem-header oily-skin-header">
                         <h3>Control de Brillo</h3>
                     </div>
                     <div class="problem-content">
@@ -526,7 +602,7 @@
                 </div>
                 
                 <div class="problem-card">
-                    <div class="problem-header">
+                    <div class="problem-header oily-skin-header">
                         <h3>Acné y Espinillas</h3>
                     </div>
                     <div class="problem-content">
@@ -541,7 +617,7 @@
                 </div>
                 
                 <div class="problem-card">
-                    <div class="problem-header">
+                    <div class="problem-header oily-skin-header">
                         <h3>Puntos Negros</h3>
                     </div>
                     <div class="problem-content">
@@ -556,7 +632,7 @@
                 </div>
                 
                 <div class="problem-card">
-                    <div class="problem-header">
+                    <div class="problem-header oily-skin-header">
                         <h3>Poros Dilatados</h3>
                     </div>
                     <div class="problem-content">
@@ -567,6 +643,139 @@
                             <li>1 cucharadita de jugo de limón</li>
                         </ul>
                         <p>Combina todos los ingredientes en una botella con spray. Aplica después de lavar tu rostro, por la mañana y noche.</p>
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-header oily-skin-header">
+                        <h3>Limpieza Profunda</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Limpiador de Miel y Limón</h3>
+                        <ul>
+                            <li>3 cucharadas de miel</li>
+                            <li>1 cucharadita de jugo de limón</li>
+                            <li>1 cucharadita de aceite de jojoba</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica sobre el rostro húmedo masajeando suavemente. Enjuaga con agua tibia.</p>
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-header oily-skin-header">
+                        <h3>Mascarilla Purificante</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Mascarilla de Yogur y Cúrcuma</h3>
+                        <ul>
+                            <li>2 cucharadas de yogur natural</li>
+                            <li>1/2 cucharadita de cúrcuma</li>
+                            <li>1 cucharadita de jugo de limón</li>
+                        </ul>
+                        <p>Combina todos los ingredientes. Aplica sobre el rostro evitando el contorno de ojos. Deja actuar 15 minutos y enjuaga.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mixed Skin Section -->
+    <section id="mixed-skin-section" class="remedies-section">
+        <div class="container">
+            <a href="#" class="back-btn" onclick="showSection('home')"><i class="fas fa-arrow-left"></i> Volver al Inicio</a>
+            <h2 class="section-title">Remedios Naturales para Piel Mixta</h2>
+            <p class="section-description" style="text-align: center; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                La piel mixta requiere un equilibrio perfecto entre hidratación en las zonas secas y control de sebo en la zona T. Estos tratamientos te ayudarán a balancear tu piel de manera natural.
+            </p>
+            
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Balance Natural</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Mascarilla de Plátano y Miel</h3>
+                        <ul>
+                            <li>1/2 plátano maduro</li>
+                            <li>1 cucharada de miel</li>
+                            <li>1 cucharadita de jugo de limón (para zona T)</li>
+                        </ul>
+                        <p>Machaca el plátano y mezcla con miel. Aplica en todo el rostro, añadiendo un poco de limón solo en la zona T. Deja actuar 20 minutos.</p>
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Hidratación Equilibrada</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Crema de Aloe Vera y Aceite de Jojoba</h3>
+                        <ul>
+                            <li>3 cucharadas de gel de aloe vera</li>
+                            <li>1 cucharadita de aceite de jojoba</li>
+                            <li>5 gotas de aceite esencial de lavanda</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica como crema hidratante día y noche, usando menos cantidad en la zona T.</p>
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Exfoliación Adaptada</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Exfoliante de Azúcar y Miel</h3>
+                        <ul>
+                            <li>2 cucharadas de azúcar moreno</li>
+                            <li>1 cucharada de miel</li>
+                            <li>1 cucharada de aceite de coco (para mejillas)</li>
+                        </ul>
+                        <p>Mezcla el azúcar con la miel. Añade más aceite de coco para las zonas secas. Exfolia con suaves movimientos circulares.</p>
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Tratamiento Zonal</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Arcilla para Zona T y Hidratante para Mejillas</h3>
+                        <ul>
+                            <li>Arcilla verde (para zona T)</li>
+                            <li>Aceite de argán (para mejillas)</li>
+                            <li>Agua de rosas (para todo el rostro)</li>
+                        </ul>
+                        <p>Aplica arcilla solo en la zona T. En las mejillas, usa aceite de argán. Termina rociando agua de rosas en todo el rostro.</p>
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Tónico Equilibrante</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Tónico de Té Verde y Lavanda</h3>
+                        <ul>
+                            <li>1/2 taza de té verde frío</li>
+                            <li>1/4 taza de agua de hamamelis</li>
+                            <li>5 gotas de aceite esencial de lavanda</li>
+                        </ul>
+                        <p>Combina todos los ingredientes. Aplica con un algodón después de limpiar el rostro, prestando especial atención a la zona T.</p>
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Mascarilla Multizona</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Mascarilla de Avena y Yogur</h3>
+                        <ul>
+                            <li>2 cucharadas de avena molida</li>
+                            <li>1 cucharada de yogur natural</li>
+                            <li>1 cucharadita de miel (para zonas secas)</li>
+                        </ul>
+                        <p>Mezcla la avena con yogur. Aplica en todo el rostro, añadiendo un poco más de miel en las zonas secas. Deja actuar 15 minutos.</p>
                     </div>
                 </div>
             </div>
@@ -605,7 +814,7 @@
                         <li><a href="#" onclick="showSection('home')">Inicio</a></li>
                         <li><a href="#" onclick="showSection('dry-skin')">Piel Seca</a></li>
                         <li><a href="#" onclick="showSection('oily-skin')">Piel Grasa</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#" onclick="showSection('mixed-skin')">Piel Mixta</a></li>
                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </div>
@@ -633,6 +842,7 @@
             document.getElementById('home-section').classList.remove('active');
             document.getElementById('dry-skin-section').classList.remove('active');
             document.getElementById('oily-skin-section').classList.remove('active');
+            document.getElementById('mixed-skin-section').classList.remove('active');
             
             // Show the selected section
             if (sectionId === 'home') {
@@ -643,6 +853,9 @@
                 window.scrollTo(0, 0);
             } else if (sectionId === 'oily-skin') {
                 document.getElementById('oily-skin-section').classList.add('active');
+                window.scrollTo(0, 0);
+            } else if (sectionId === 'mixed-skin') {
+                document.getElementById('mixed-skin-section').classList.add('active');
                 window.scrollTo(0, 0);
             }
         }
