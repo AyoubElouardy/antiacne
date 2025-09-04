@@ -706,7 +706,7 @@
                         <h3>Hidratación Profunda</h3>
                     </div>
                     <div class="problem-content">
-                        <h3>Serum de Aguacate y Jojoba</h3>
+                        <h3>Serum de Aguacate và Jojoba</h3>
                         <ul>
                             <li>1 cucharada de aceite de aguacate</li>
                             <li>1 cucharada de aceite de jojoba</li>
@@ -862,7 +862,7 @@
                         <h3>Calmante</h3>
                     </div>
                     <div class="problem-content">
-                        <h3>Tónico de Manzanilla y Lavanda</h3>
+                        <h3>Tónico de Manzanilla và Lavanda</h3>
                         <ul>
                             <li>2 bolsas de té de manzanilla</li>
                             <li>1 taza de agua hirviendo</li>
@@ -1134,7 +1134,7 @@
                         <h3>Purificante</h3>
                     </div>
                     <div class="problem-content">
-                        <h3>Mascarilla de Arcilla Verde y Té Verde</h3>
+                        <h3>Mascarilla de Arcilla Verde và Té Verde</h3>
                         <ul>
                             <li>2 cucharadas de arcilla verde</li>
                             <li>2 cucharadas de té verde frío</li>
@@ -1597,7 +1597,7 @@
                     <div class="problem-content">
                         <h3>Exfoliante de Papaya</h3>
                         <ul>
-                            <li>2 cucharadas de papaya madura triturada</li>
+                            <li>2 cucharadas of papaya madura triturada</li>
                             <li>1 cucharada de avena molida</li>
                             <li>1 cucharadita de miel</li>
                         </ul>
