@@ -364,47 +364,6 @@
             margin-bottom: 15px;
         }
         
-        /* Newsletter */
-        .newsletter {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
-            color: white;
-            padding: 80px 0;
-            text-align: center;
-        }
-        
-        .newsletter h2 {
-            margin-bottom: 20px;
-        }
-        
-        .newsletter p {
-            max-width: 600px;
-            margin: 0 auto 30px;
-        }
-        
-        .newsletter-form {
-            display: flex;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        
-        .newsletter-form input {
-            flex: 1;
-            padding: 15px;
-            border: none;
-            border-radius: 50px 0 0 50px;
-            outline: none;
-        }
-        
-        .newsletter-form button {
-            background-color: var(--accent);
-            color: #333;
-            border: none;
-            padding: 0 25px;
-            border-radius: 0 50px 50px 0;
-            font-weight: 600;
-            cursor: pointer;
-        }
-        
         /* Footer */
         footer {
             background-color: #1a1a2e;
@@ -514,20 +473,6 @@
                 grid-template-columns: 1fr;
             }
             
-            .newsletter-form {
-                flex-direction: column;
-            }
-            
-            .newsletter-form input {
-                border-radius: 50px;
-                margin-bottom: 10px;
-            }
-            
-            .newsletter-form button {
-                border-radius: 50px;
-                padding: 15px;
-            }
-            
             .category-filter {
                 flex-direction: column;
                 align-items: center;
@@ -601,18 +546,6 @@
                         <p>Balancea las zonas grasas y secas de tu rostro con estos remedios naturales. Equilibrio perfecto para tu piel.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Newsletter -->
-        <div class="newsletter">
-            <div class="container">
-                <h2>Suscríbete a Nuestro Newsletter</h2>
-                <p>Recibe semanalmente recetas naturales, consejos de cuidado de la piel y promociones exclusivas.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Tu correo electrónico" required>
-                    <button type="submit">Suscribirme</button>
-                </form>
             </div>
         </div>
 
@@ -706,7 +639,7 @@
                         <h3>Hidratación Profunda</h3>
                     </div>
                     <div class="problem-content">
-                        <h3>Serum de Aguacate và Jojoba</h3>
+                        <h3>Serum de Aguacate y Jojoba</h3>
                         <ul>
                             <li>1 cucharada de aceite de aguacate</li>
                             <li>1 cucharada de aceite de jojoba</li>
@@ -764,7 +697,7 @@
                             <li>1 cucharada de miel</li>
                             <li>1 cucharadita de aceite de almendras</li>
                         </ul>
-                        <p>Machaca el plátano hasta hacer puré, añade miel y aceite. Aplica durante 15-20 minutos. Enjuaga con agua tibia.</p>
+                        <p>Machaca el plátano hasta hacer puré, añade miel y aceite. Aplica durante 15-20 minutos. Enjuaga dengan agua tibia.</p>
                         <span class="benefit-tag">Nutritiva</span>
                         <span class="benefit-tag">Calmante</span>
                     </div>
@@ -779,7 +712,6 @@
                         <ul>
                             <li>2 cucharadas de yogur natural</li>
                             <li>1 cucharada de miel</li>
-                            <li>1 cucharadita de aceite de coco</li>
                         </ul>
                         <p>Mezcla todos los ingredientes. Aplica sobre el rostro durante 15 minutos. Enjuaga con agua tibia.</p>
                         <span class="benefit-tag">Revitalizante</span>
@@ -862,7 +794,7 @@
                         <h3>Calmante</h3>
                     </div>
                     <div class="problem-content">
-                        <h3>Tónico de Manzanilla và Lavanda</h3>
+                        <h3>Tónico de Manzanilla y Lavanda</h3>
                         <ul>
                             <li>2 bolsas de té de manzanilla</li>
                             <li>1 taza de agua hirviendo</li>
@@ -940,110 +872,6 @@
                         <p>Mezcla todos los ingredientes. Aplica con un algodón en las zonas afectadas dos veces al día.</p>
                         <span class="benefit-tag">Astringente suave</span>
                         <span class="benefit-tag">Calmante</span>
-                    </div>
-                </div>
-                
-                <!-- ARRUGAS (3) -->
-                <div class="problem-card" data-category="arrugas" data-tags="piel seca arrugas suero rosa mosqueta antioxidante">
-                    <div class="problem-header dry-skin-header">
-                        <h3>Antiarrugas</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Suero de Rosa Mosqueta</h3>
-                        <ul>
-                            <li>2 cucharadas de aceite de rosa mosqueta</li>
-                            <li>5 gotas de aceite esencial de neroli</li>
-                            <li>3 gotas de aceite esencial de incienso</li>
-                        </ul>
-                        <p>Mezcla los aceites. Aplica 2-3 gotas en rostro y cuello mañana y noche.</p>
-                        <span class="benefit-tag">Regenerador</span>
-                        <span class="benefit-tag">Antioxidante</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="arrugas" data-tags="piel seca arrugas mascarilla aguacate plátano">
-                    <div class="problem-header dry-skin-header">
-                        <h3>Mascarilla Antiaging</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Mascarilla de Aguacate y Plátano</h3>
-                        <ul>
-                            <li>1/4 de aguacate maduro</li>
-                            <li>1/2 plátano maduro</li>
-                            <li>1 cucharada de miel</li>
-                        </ul>
-                        <p>Machaca el aguacate y el plátano, añade miel. Aplica durante 20 minutos. Enjuaga con agua tibia.</p>
-                        <span class="benefit-tag">Nutritiva</span>
-                        <span class="benefit-tag">Antienvejecimiento</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="arrugas" data-tags="piel seca arrugas contorno ojos manzanilla">
-                    <div class="problem-header dry-skin-header">
-                        <h3>Contorno de Ojos</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Tratamiento para Contorno de Ojos</h3>
-                        <ul>
-                            <li>1 cucharada de aceite de almendras</li>
-                            <li>2 gotas de aceite esencial de manzanilla</li>
-                            <li>1 gota de aceite esencial de limón</li>
-                        </ul>
-                        <p>Mezcla los aceites. Aplica una cantidad mínima con suaves toques alrededor de los ojos antes de dormir.</p>
-                        <span class="benefit-tag">Antiojeras</span>
-                        <span class="benefit-tag">Hidratante</span>
-                    </div>
-                </div>
-                
-                <!-- MANCHAS (3) -->
-                <div class="problem-card" data-category="manchas" data-tags="piel seca manchas tratamiento limón miel">
-                    <div class="problem-header dry-skin-header">
-                        <h3>Manchas y Hiperpigmentación</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Tratamiento de Limón y Miel</h3>
-                        <ul>
-                            <li>1 cucharadita de jugo de limón</li>
-                            <li>1 cucharada de miel</li>
-                            <li>Algodón</li>
-                        </ul>
-                        <p>Mezcla el limón con miel. Aplica sobre las manchas con un algodón. Deja actuar 10 minutos. Enjuaga.</p>
-                        <span class="benefit-tag">Despigmentante</span>
-                        <span class="benefit-tag">Suave</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="manchas" data-tags="piel seca manchas mascarilla cúrcuma yogur">
-                    <div class="problem-header dry-skin-header">
-                        <h3>Mascarilla Uniformizante</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Mascarilla de Cúrcuma y Yogur</h3>
-                        <ul>
-                            <li>1 cucharadita de cúrcuma en polvo</li>
-                            <li>2 cucharadas de yogur natural</li>
-                            <li>1 cucharadita de miel</li>
-                        </ul>
-                        <p>Mezcla todos los ingredientes. Aplica sobre el rostro evitando contorno de ojos. Deja 15 minutos. Enjuaga.</p>
-                        <span class="benefit-tag">Uniformizante</span>
-                        <span class="benefit-tag">Antioxidante</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="manchas" data-tags="piel seca manchas suero vitamina e limón">
-                    <div class="problem-header dry-skin-header">
-                        <h3>Suero para Manchas</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Suero de Vitamina E y Limón</h3>
-                        <ul>
-                            <li>2 cápsulas de vitamina E</li>
-                            <li>1 cucharadita de jugo de limón</li>
-                            <li>1 cucharada de aceite de rosa mosqueta</li>
-                        </ul>
-                        <p>Mezcla todos los ingredientes. Aplica sobre las manchas antes de dormir. No enjuagues.</p>
-                        <span class="benefit-tag">Despigmentante</span>
-                        <span class="benefit-tag">Regenerador</span>
                     </div>
                 </div>
             </div>
@@ -1134,7 +962,7 @@
                         <h3>Purificante</h3>
                     </div>
                     <div class="problem-content">
-                        <h3>Mascarilla de Arcilla Verde và Té Verde</h3>
+                        <h3>Mascarilla de Arcilla Verde y Té Verde</h3>
                         <ul>
                             <li>2 cucharadas de arcilla verde</li>
                             <li>2 cucharadas de té verde frío</li>
@@ -1333,110 +1161,6 @@
                         <p>Mezcla todos los ingredientes. Aplica con algodón en las zonas afectadas dos veces al día.</p>
                         <span class="benefit-tag">Astringente</span>
                         <span class="benefit-tag">Antibacterial</span>
-                    </div>
-                </div>
-                
-                <!-- POROS DILATADOS (3) -->
-                <div class="problem-card" data-category="poros" data-tags="piel grasa poros dilatados tratamiento arcilla">
-                    <div class="problem-header oily-skin-header">
-                        <h3>Poros Dilatados</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Tratamiento de Arcilla para Poros</h3>
-                        <ul>
-                            <li>1 cucharada de arcilla verde</li>
-                            <li>1 cucharada de agua de rosas</li>
-                            <li>3 gotas de aceite esencial de menta</li>
-                        </ul>
-                        <p>Mezcla la arcilla con agua de rosas, añade aceite de menta. Aplica solo en zona T. Deja secar 10 minutos. Enjuaga.</p>
-                        <span class="benefit-tag">Minimiza poros</span>
-                        <span class="benefit-tag">Refrescante</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="poros" data-tags="piel grasa poros dilatados tónico manzanilla limón">
-                    <div class="problem-header oily-skin-header">
-                        <h3>Tónico para Poros</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Tónico de Manzanilla y Limón</h3>
-                        <ul>
-                            <li>1/2 taza de infusión de manzanilla fría</li>
-                            <li>1 cucharada de hamamelis</li>
-                            <li>1 cucharadita de jugo de limón</li>
-                        </ul>
-                        <p>Mezcla todos los ingredientes. Aplica con algodón después de limpiar el rostro.</p>
-                        <span class="benefit-tag">Minimiza poros</span>
-                        <span class="benefit-tag">Calmante</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="poros" data-tags="piel grasa poros dilatados mascarilla clara huevo limón">
-                    <div class="problem-header oily-skin-header">
-                        <h3>Mascarilla para Poros</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Mascarilla de Clara de Huevo y Limón</h3>
-                        <ul>
-                            <li>1 clara de huevo</li>
-                            <li>1 cucharadita de jugo de limón</li>
-                            <li>1 cucharadita de miel</li>
-                        </ul>
-                        <p>Bate la clara a punto de nieve, añade limón y miel. Aplica en zona T. Deja secar 15 minutos. Enjuaga con agua fría.</p>
-                        <span class="benefit-tag">Cierra poros</span>
-                        <span class="benefit-tag">Tensora</span>
-                    </div>
-                </div>
-                
-                <!-- CONTROL DE BRILLO (3) -->
-                <div class="problem-card" data-category="brillo" data-tags="piel grasa control brillo polvos té verde">
-                    <div class="problem-header oily-skin-header">
-                        <h3>Control de Brillo</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Polvos Matificantes de Té Verde</h3>
-                        <ul>
-                            <li>2 cucharadas de arcilla blanca</li>
-                            <li>1 cucharada de hojas de té verde molidas</li>
-                            <li>1 cucharadita de canela en polvo (opcional)</li>
-                        </ul>
-                        <p>Mezcla todos los ingredientes. Aplica con una brocha grande sobre el rostro para controlar el brillo.</p>
-                        <span class="benefit-tag">Matificante</span>
-                        <span class="benefit-tag">Absorbente</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="brillo" data-tags="piel grasa control brillo tónico salvia menta">
-                    <div class="problem-header oily-skin-header">
-                        <h3>Tónico Matificante</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Tónico de Salvia y Menta</h3>
-                        <ul>
-                            <li>1/4 taza de hojas de salvia fresca</li>
-                            <li>1/4 taza de hojas de menta fresca</li>
-                            <li>1 taza de agua hirviendo</li>
-                        </ul>
-                        <p>Prepara una infusión con las hierbas. Cuando esté fría, cuela y usa como tónico facial.</p>
-                        <span class="benefit-tag">Matificante</span>
-                        <span class="benefit-tag">Refrescante</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="brillo" data-tags="piel grasa control brillo papel absorbente arroz">
-                    <div class="problem-header oily-skin-header">
-                        <h3>Papeles Absorbentes Caseros</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Papeles de Arroz Naturales</h3>
-                        <ul>
-                            <li>Papel de arroz</li>
-                            <li>1 cucharada de polvo de arcilla</li>
-                            <li>1 cucharada de polvo de arrurruz</li>
-                        </ul>
-                        <p>Corta el papel de arroz en cuadrados. Mezcla los polvos y espolvorea ligeramente sobre los papeles.</p>
-                        <span class="benefit-tag">Absorbente</span>
-                        <span class="benefit-tag">Práctico</span>
                     </div>
                 </div>
             </div>
@@ -1676,106 +1400,55 @@
                     </div>
                 </div>
                 
-                <!-- BALANCE (3) -->
-                <div class="problem-card" data-category="balance" data-tags="piel mixta balance mascarilla multitarea">
+                <!-- ACNÉ (3) -->
+                <div class="problem-card" data-category="acne" data-tags="piel mixta acné tratamiento árbol té antiinflamatorio">
                     <div class="problem-header mixed-skin-header">
-                        <h3>Balance Completo</h3>
+                        <h3>Acné</h3>
                     </div>
                     <div class="problem-content">
-                        <h3>Mascarilla Multitarea</h3>
+                        <h3>Tratamiento Localizado de Árbol de Té</h3>
                         <ul>
-                            <li>1 cucharada de arcilla verde (para zona T)</li>
-                            <li>2 cucharadas de gel de aloe vera (para mejillas)</li>
-                            <li>1 cucharadita de miel (para zonas secas)</li>
-                        </ul>
-                        <p>Aplica cada ingrediente según las necesidades de cada zona facial. Deja actuar 15 minutos. Enjuaga.</p>
-                        <span class="benefit-tag">Multizona</span>
-                        <span class="benefit-tag">Completo</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="balance" data-tags="piel mixta balance suero regulador">
-                    <div class="problem-header mixed-skin-header">
-                        <h3>Suero Regulador</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Suero Balanceador de Jojoba y Lavanda</h3>
-                        <ul>
+                            <li>5 gotas de aceite de árbol de té</li>
                             <li>1 cucharada de aceite de jojoba</li>
-                            <li>3 gotas de aceite esencial de lavanda</li>
-                            <li>2 gotas de aceite esencial de limón</li>
+                            <li>Algodón o hisopo</li>
                         </ul>
-                        <p>Mezcla los aceites. Aplica 2-3 gotas en todo el rostro, usando menos en zona T.</p>
-                        <span class="benefit-tag">Regulador</span>
-                        <span class="benefit-tag">Equilibrante</span>
+                        <p>Mezcla los aceites. Aplica directamente sobre los granos con un hisopo. No enjuagues.</p>
+                        <span class="benefit-tag">Antibacterial</span>
+                        <span class="benefit-tag">Antiinflamatorio</span>
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="balance" data-tags="piel mixta balance tratamiento nocturno">
+                <div class="problem-card" data-category="acne" data-tags="piel mixta acné mascarilla miel canela antibacterial">
                     <div class="problem-header mixed-skin-header">
-                        <h3>Tratamiento Nocturno</h3>
+                        <h3>Mascarilla para Acné</h3>
                     </div>
                     <div class="problem-content">
-                        <h3>Tratamiento Nocturno de Balance</h3>
+                        <h3>Mascarilla de Miel y Canela</h3>
                         <ul>
-                            <li>1 cucharadita de aceite de jojoba</li>
-                            <li>2 gotas de aceite esencial de árbol de té (solo en zona T)</li>
-                            <li>3 gotas de aceite de rosa mosqueta (solo en mejillas)</li>
+                            <li>2 cucharadas de miel</li>
+                            <li>1 cucharadita de canela en polvo</li>
+                            <li>1 cucharadita de aceite de coco</li>
                         </ul>
-                        <p>Aplica los aceites específicos en cada zona según sus necesidades. No enjuagues.</p>
-                        <span class="benefit-tag">Nocturno</span>
-                        <span class="benefit-tag">Balanceador</span>
+                        <p>Mezcla todos los ingredientes. Aplica sobre las áreas con acné. Deja actuar 15 minutos. Enjuaga.</p>
+                        <span class="benefit-tag">Antibacterial</span>
+                        <span class="benefit-tag">Antiinflamatorio</span>
                     </div>
                 </div>
                 
-                <!-- TRATAMIENTO ZONAL (3) -->
-                <div class="problem-card" data-category="zonal" data-tags="piel mixta tratamiento zonal arcilla zona T">
+                <div class="problem-card" data-category="acne" data-tags="piel mixta acné tónico hamamelis lavanda">
                     <div class="problem-header mixed-skin-header">
-                        <h3>Tratamiento Zonal</h3>
+                        <h3>Tónico para Acné</h3>
                     </div>
                     <div class="problem-content">
-                        <h3>Arcilla para Zona T y Hidratante para Mejillas</h3>
+                        <h3>Tónico de Hamamelis y Lavanda</h3>
                         <ul>
-                            <li>Arcilla verde (para zona T)</li>
-                            <li>Aceite de argán (para mejillas)</li>
-                            <li>Agua de rosas (para todo el rostro)</li>
+                            <li>1/2 taza de hamamelis</li>
+                            <li>10 gotas de aceite esencial de lavanda</li>
+                            <li>2 cucharadas de agua de rosas</li>
                         </ul>
-                        <p>Aplica arcilla solo en la zona T. En las mejillas, usa aceite de argán. Termina rociando agua de rosas en todo el rostro.</p>
-                        <span class="benefit-tag">Multizona</span>
-                        <span class="benefit-tag">Personalizado</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="zonal" data-tags="piel mixta tratamiento zonal exfoliante adaptado">
-                    <div class="problem-header mixed-skin-header">
-                        <h3>Exfoliación Zonal</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Exfoliación Adaptada a Cada Zona</h3>
-                        <ul>
-                            <li>Exfoliante de azúcar y miel (para mejillas)</li>
-                            <li>Exfoliante de avena y limón (para zona T)</li>
-                            <li>Aceite de coco (para contorno de ojos)</li>
-                        </ul>
-                        <p>Utiliza diferentes exfoliantes según las necesidades de cada zona facial.</p>
-                        <span class="benefit-tag">Adaptable</span>
-                        <span class="benefit-tag">Personalizado</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="zonal" data-tags="piel mixta tratamiento zonal mascarilla dos en uno">
-                    <div class="problem-header mixed-skin-header">
-                        <h3>Mascarilla Dos en Uno</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Mascarilla de Dos Fases</h3>
-                        <ul>
-                            <li>Fase 1: Arcilla verde + té verde (para zona T)</li>
-                            <li>Fase 2: Miel + aguacate (para mejillas y zonas secas)</li>
-                        </ul>
-                        <p>Prepara dos mezclas separadas. Aplica cada una en la zona correspondiente. Deja actuar 15 minutos. Enjuaga.</p>
-                        <span class="benefit-tag">Dual</span>
-                        <span class="benefit-tag">Completo</span>
+                        <p>Mezcla todos los ingredientes. Aplica con un algodón en las zonas afectadas dos veces al día.</p>
+                        <span class="benefit-tag">Astringente suave</span>
+                        <span class="benefit-tag">Calmante</span>
                     </div>
                 </div>
             </div>
@@ -1783,13 +1456,6 @@
     </section>
 
     <script>
-        // Datos de búsqueda para cada receta
-        const recipeData = {
-            'dry-skin': [],
-            'oily-skin': [],
-            'mixed-skin': []
-        };
-
         // Función para mostrar la página seleccionada y ocultar las demás
         function showPage(pageId) {
             // Ocultar todas las páginas
@@ -1895,27 +1561,6 @@
             }
         }
         
-        // Inicializar datos de búsqueda
-        function initSearchData() {
-            const skinTypes = ['dry', 'oily', 'mixed'];
-            
-            skinTypes.forEach(skinType => {
-                const recipes = document.querySelectorAll(`#${skinType}-skin-page .problem-card`);
-                recipes.forEach(recipe => {
-                    const tags = recipe.getAttribute('data-tags');
-                    const title = recipe.querySelector('h3').textContent;
-                    const header = recipe.querySelector('.problem-header h3').textContent;
-                    
-                    recipeData[`${skinType}-skin`].push({
-                        element: recipe,
-                        tags: tags,
-                        title: title,
-                        header: header
-                    });
-                });
-            });
-        }
-        
         // Inicializar la página mostrando la página de inicio
         document.addEventListener('DOMContentLoaded', function() {
             // Mostrar solo la página de inicio al cargar
@@ -1923,9 +1568,6 @@
             document.getElementById('dry-skin-page').style.display = 'none';
             document.getElementById('oily-skin-page').style.display = 'none';
             document.getElementById('mixed-skin-page').style.display = 'none';
-            
-            // Inicializar datos de búsqueda
-            initSearchData();
             
             // Añadir event listeners a los enlaces de navegación
             document.getElementById('home-link').addEventListener('click', function(e) {
