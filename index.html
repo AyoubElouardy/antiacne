@@ -3,12 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remedios Naturales para Piel Seca, Grasa y Mixta | Tratamientos Caseros</title>
-    <meta name="description" content="Descubre los mejores remedios naturales para el cuidado de la piel según tu tipo: seca, grasa, mixta. Soluciones caseras para acné, puntos negros, manchas, arrugas y más. Aprende a preparar mascarillas, tónicos e hidratantes naturales.">
-    <meta name="keywords" content="remedios naturales piel, cuidado facial natural, mascarillas caseras, acné tratamiento natural, puntos negros eliminar, piel seca hidratación, piel grasa control sebo, poros dilatados, arrugas naturales, manchas faciales, belleza natural, skincare casero, rostro luminoso, antioxidantes naturales">
-    <meta name="author" content="NaturalSkin">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.naturalskin.com/remedios-naturales">
+    <title>Remedios Naturales para el Cuidado de la Piel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -89,33 +84,6 @@
         nav ul li a:hover, nav ul li a.active {
             background-color: rgba(255, 255, 255, 0.2);
             color: var(--accent);
-        }
-        
-        /* Search Box */
-        .search-container {
-            position: relative;
-            margin-left: 20px;
-        }
-        
-        .search-box {
-            padding: 10px 15px;
-            padding-right: 40px;
-            border: none;
-            border-radius: 25px;
-            width: 250px;
-            font-size: 14px;
-            outline: none;
-        }
-        
-        .search-btn {
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: none;
-            border: none;
-            color: var(--dark);
-            cursor: pointer;
         }
         
         /* Hero Section */
@@ -225,10 +193,6 @@
             padding: 60px 0;
             background-color: #f1f5f9;
             min-height: calc(100vh - 80px);
-        }
-        
-        .remedies-page.active {
-            display: block;
         }
         
         .back-btn {
@@ -349,21 +313,6 @@
             color: white;
         }
         
-        /* Search Results */
-        .search-results {
-            display: none;
-            background-color: white;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-        
-        .search-results h3 {
-            color: var(--primary);
-            margin-bottom: 15px;
-        }
-        
         /* Footer */
         footer {
             background-color: #1a1a2e;
@@ -451,16 +400,6 @@
                 margin: 10px;
             }
             
-            .search-container {
-                margin: 15px 0 0 0;
-                width: 100%;
-            }
-            
-            .search-box {
-                width: 100%;
-                max-width: 300px;
-            }
-            
             .hero h1 {
                 font-size: 36px;
             }
@@ -500,14 +439,6 @@
                         <li><a href="#" id="dry-skin-link">Piel Seca</a></li>
                         <li><a href="#" id="oily-skin-link">Piel Grasa</a></li>
                         <li><a href="#" id="mixed-skin-link">Piel Mixta</a></li>
-                        <li>
-                            <div class="search-container">
-                                <input type="text" class="search-box" id="search-input" placeholder="Buscar remedios...">
-                                <button class="search-btn" id="search-button">
-                                    <i class="fas fa-search"></i>
-                                </button>
-                            </div>
-                        </li>
                     </ul>
                 </nav>
             </div>
@@ -599,11 +530,6 @@
                 La piel seca necesita hidratación intensa y nutrición profunda. Descubre estos remedios naturales para restaurar la humedad natural de tu piel y lograr un aspecto radiante.
             </p>
             
-            <div class="search-results" id="dry-skin-search-results">
-                <h3>Resultados de búsqueda para: <span id="dry-search-query"></span></h3>
-                <div id="dry-search-results-container"></div>
-            </div>
-            
             <div class="category-filter">
                 <button class="filter-btn active" data-category="all">Todos</button>
                 <button class="filter-btn" data-category="hidratantes">Hidratantes</button>
@@ -611,13 +537,11 @@
                 <button class="filter-btn" data-category="exfoliantes">Exfoliantes</button>
                 <button class="filter-btn" data-category="tonicos">Tónicos</button>
                 <button class="filter-btn" data-category="acne">Acné</button>
-                <button class="filter-btn" data-category="arrugas">Arrugas</button>
-                <button class="filter-btn" data-category="manchas">Manchas</button>
             </div>
             
             <div class="problems-grid">
-                <!-- HIDRATANTES (3) -->
-                <div class="problem-card" data-category="hidratantes" data-tags="piel seca hidratación profunda aceite coco vitamina e">
+                <!-- HIDRATANTES -->
+                <div class="problem-card" data-category="hidratantes">
                     <div class="problem-header dry-skin-header">
                         <h3>Hidratación Intensa</h3>
                     </div>
@@ -634,7 +558,7 @@
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="hidratantes" data-tags="piel seca suero aguacate jojoba nutrición">
+                <div class="problem-card" data-category="hidratantes">
                     <div class="problem-header dry-skin-header">
                         <h3>Hidratación Profunda</h3>
                     </div>
@@ -651,25 +575,8 @@
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="hidratantes" data-tags="piel seca bálsamo karité almendras reparación nocturna">
-                    <div class="problem-header dry-skin-header">
-                        <h3>Hidratación Nocturna</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Bálsamo Nocturno de Karité</h3>
-                        <ul>
-                            <li>1 cucharada de manteca de karité</li>
-                            <li>1 cucharadita de aceite de almendras</li>
-                            <li>3 gotas de aceite esencial de incienso</li>
-                        </ul>
-                        <p>Derrite la manteca de karité al baño maría, añade los aceites. Aplica una capa fina antes de dormir.</p>
-                        <span class="benefit-tag">Reparador</span>
-                        <span class="benefit-tag">Nutritivo</span>
-                    </div>
-                </div>
-                
-                <!-- MASCARILLAS (3) -->
-                <div class="problem-card" data-category="mascarillas" data-tags="piel seca mascarilla aguacate miel hidratación">
+                <!-- MASCARILLAS -->
+                <div class="problem-card" data-category="mascarillas">
                     <div class="problem-header dry-skin-header">
                         <h3>Nutrición Intensa</h3>
                     </div>
@@ -686,7 +593,7 @@
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="mascarillas" data-tags="piel seca mascarilla plátano miel calmante">
+                <div class="problem-card" data-category="mascarillas">
                     <div class="problem-header dry-skin-header">
                         <h3>Calmante y Nutritiva</h3>
                     </div>
@@ -697,30 +604,14 @@
                             <li>1 cucharada de miel</li>
                             <li>1 cucharadita de aceite de almendras</li>
                         </ul>
-                        <p>Machaca el plátano hasta hacer puré, añade miel y aceite. Aplica durante 15-20 minutos. Enjuaga dengan agua tibia.</p>
+                        <p>Machaca el plátano hasta hacer puré, añade miel y aceite. Aplica durante 15-20 minutos. Enjuaga con agua tibia.</p>
                         <span class="benefit-tag">Nutritiva</span>
                         <span class="benefit-tag">Calmante</span>
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="mascarillas" data-tags="piel seca mascarilla yogur miel revitalizante">
-                    <div class="problem-header dry-skin-header">
-                        <h3>Revitalizante</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Mascarilla de Yogur y Miel</h3>
-                        <ul>
-                            <li>2 cucharadas de yogur natural</li>
-                            <li>1 cucharada de miel</li>
-                        </ul>
-                        <p>Mezcla todos los ingredientes. Aplica sobre el rostro durante 15 minutos. Enjuaga con agua tibia.</p>
-                        <span class="benefit-tag">Revitalizante</span>
-                        <span class="benefit-tag">Hidratante</span>
-                    </div>
-                </div>
-                
-                <!-- EXFOLIANTES (3) -->
-                <div class="problem-card" data-category="exfoliantes" data-tags="piel seca exfoliante avena miel suavizante">
+                <!-- EXFOLIANTES -->
+                <div class="problem-card" data-category="exfoliantes">
                     <div class="problem-header dry-skin-header">
                         <h3>Exfoliación Suave</h3>
                     </div>
@@ -737,42 +628,8 @@
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="exfoliantes" data-tags="piel seca exfoliante azúcar miel nutritivo">
-                    <div class="problem-header dry-skin-header">
-                        <h3>Exfoliación Nutritiva</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Exfoliante de Azúcar Moreno y Miel</h3>
-                        <ul>
-                            <li>2 cucharadas de azúcar moreno</li>
-                            <li>1 cucharada de miel</li>
-                            <li>1 cucharada de aceite de oliva</li>
-                        </ul>
-                        <p>Mezcla los ingredientes. Aplica con movimientos circulares suaves. Enjuaga con agua tibia.</p>
-                        <span class="benefit-tag">Nutritivo</span>
-                        <span class="benefit-tag">Hidratante</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="exfoliantes" data-tags="piel seca exfoliante café coco energizante">
-                    <div class="problem-header dry-skin-header">
-                        <h3>Exfoliación de Café</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Exfoliante de Café y Aceite de Coco</h3>
-                        <ul>
-                            <li>2 cucharadas de café molido</li>
-                            <li>1 cucharada de aceite de coco</li>
-                            <li>1 cucharadita de miel</li>
-                        </ul>
-                        <p>Mezcla todos los ingredientes. Aplica con suaves masajes circulares. Enjuaga con agua tibia.</p>
-                        <span class="benefit-tag">Energizante</span>
-                        <span class="benefit-tag">Antioxidante</span>
-                    </div>
-                </div>
-                
-                <!-- TÓNICOS (3) -->
-                <div class="problem-card" data-category="tonicos" data-tags="piel seca tónico rosas hidratante calmante">
+                <!-- TÓNICOS -->
+                <div class="problem-card" data-category="tonicos">
                     <div class="problem-header dry-skin-header">
                         <h3>Hidratante y Calmante</h3>
                     </div>
@@ -789,42 +646,8 @@
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="tonicos" data-tags="piel seca tónico manzanilla lavanda calmante">
-                    <div class="problem-header dry-skin-header">
-                        <h3>Calmante</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Tónico de Manzanilla y Lavanda</h3>
-                        <ul>
-                            <li>2 bolsas de té de manzanilla</li>
-                            <li>1 taza de agua hirviendo</li>
-                            <li>5 gotas de aceite esencial de lavanda</li>
-                        </ul>
-                        <p>Prepara una infusión con la manzanilla. Cuando esté fría, añade el aceite de lavanda. Aplica con un algodón.</p>
-                        <span class="benefit-tag">Calmante</span>
-                        <span class="benefit-tag">Antiinflamatorio</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="tonicos" data-tags="piel seca tónico pepino menta revitalizante">
-                    <div class="problem-header dry-skin-header">
-                        <h3>Revitalizante</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Tónico de Pepino y Menta</h3>
-                        <ul>
-                            <li>1/2 pepino mediano</li>
-                            <li>1 cucharada de hojas de menta fresca</li>
-                            <li>1 taza de agua de rosas</li>
-                        </ul>
-                        <p>Licúa el pepino con la menta y el agua de rosas. Cuela y guarda en refrigeración. Aplica por las mañanas.</p>
-                        <span class="benefit-tag">Revitalizante</span>
-                        <span class="benefit-tag">Refrescante</span>
-                    </div>
-                </div>
-                
-                <!-- ACNÉ (3) -->
-                <div class="problem-card" data-category="acne" data-tags="piel seca acné tratamiento árbol té antiinflamatorio">
+                <!-- ACNÉ -->
+                <div class="problem-card" data-category="acne">
                     <div class="problem-header dry-skin-header">
                         <h3>Acné Suave</h3>
                     </div>
@@ -841,7 +664,7 @@
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="acne" data-tags="piel seca acné mascarilla miel canela antibacterial">
+                <div class="problem-card" data-category="acne">
                     <div class="problem-header dry-skin-header">
                         <h3>Mascarilla para Acné</h3>
                     </div>
@@ -857,23 +680,6 @@
                         <span class="benefit-tag">Antiinflamatorio</span>
                     </div>
                 </div>
-                
-                <div class="problem-card" data-category="acne" data-tags="piel seca acné tónico hamamelis lavanda">
-                    <div class="problem-header dry-skin-header">
-                        <h3>Tónico para Acné</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Tónico de Hamamelis y Lavanda</h3>
-                        <ul>
-                            <li>1/2 taza de hamamelis</li>
-                            <li>10 gotas de aceite esencial de lavanda</li>
-                            <li>2 cucharadas de agua de rosas</li>
-                        </ul>
-                        <p>Mezcla todos los ingredientes. Aplica con un algodón en las zonas afectadas dos veces al día.</p>
-                        <span class="benefit-tag">Astringente suave</span>
-                        <span class="benefit-tag">Calmante</span>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -887,11 +693,6 @@
                 La piel grasa requiere regulación del sebo, limpieza profunda y minimización de poros. Estos tratamientos naturales te ayudarán a controlar el brillo y prevenir imperfecciones.
             </p>
             
-            <div class="search-results" id="oily-skin-search-results">
-                <h3>Resultados de búsqueda para: <span id="oily-search-query"></span></h3>
-                <div id="oily-search-results-container"></div>
-            </div>
-            
             <div class="category-filter">
                 <button class="filter-btn active" data-category="all">Todos</button>
                 <button class="filter-btn" data-category="hidratantes">Hidratantes</button>
@@ -899,13 +700,11 @@
                 <button class="filter-btn" data-category="exfoliantes">Exfoliantes</button>
                 <button class="filter-btn" data-category="tonicos">Tónicos</button>
                 <button class="filter-btn" data-category="acne">Acné</button>
-                <button class="filter-btn" data-category="poros">Poros Dilatados</button>
-                <button class="filter-btn" data-category="brillo">Control de Brillo</button>
             </div>
             
             <div class="problems-grid">
-                <!-- HIDRATANTES (3) -->
-                <div class="problem-card" data-category="hidratantes" data-tags="piel grasa hidratante aloe vera árbol té matificante">
+                <!-- HIDRATANTES -->
+                <div class="problem-card" data-category="hidratantes">
                     <div class="problem-header oily-skin-header">
                         <h3>Hidratación Ligera</h3>
                     </div>
@@ -922,42 +721,8 @@
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="hidratantes" data-tags="piel grasa suero jojoba lavanda balanceador">
-                    <div class="problem-header oily-skin-header">
-                        <h3>Hidratación Balanceada</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Suero de Jojoba y Lavanda</h3>
-                        <ul>
-                            <li>2 cucharadas de aceite de jojoba</li>
-                            <li>5 gotas de aceite essential de lavanda</li>
-                            <li>3 gotas de aceite esencial de limón</li>
-                        </ul>
-                        <p>Mezcla los aceites. Aplica 2-3 gotas en el rostro después de la limpieza.</p>
-                        <span class="benefit-tag">Balanceador</span>
-                        <span class="benefit-tag">Regulador</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="hidratantes" data-tags="piel grasa hidratante té verde aloe vera sin aceites">
-                    <div class="problem-header oily-skin-header">
-                        <h3>Hidratación sin Aceites</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Hidratante de Té Verde</h3>
-                        <ul>
-                            <li>1/4 taza de té verde fuerte frío</li>
-                            <li>1 cucharada de gel de aloe vera</li>
-                            <li>1 cucharadita de glicerina vegetal</li>
-                        </ul>
-                        <p>Mezcla todos los ingredientes. Aplica sobre el rostro limpio. No enjuagues.</p>
-                        <span class="benefit-tag">Libre de aceites</span>
-                        <span class="benefit-tag">Antioxidante</span>
-                    </div>
-                </div>
-                
-                <!-- MASCARILLAS (3) -->
-                <div class="problem-card" data-category="mascarillas" data-tags="piel grasa mascarilla arcilla verde té verde purificante">
+                <!-- MASCARILLAS -->
+                <div class="problem-card" data-category="mascarillas">
                     <div class="problem-header oily-skin-header">
                         <h3>Purificante</h3>
                     </div>
@@ -974,7 +739,7 @@
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="mascarillas" data-tags="piel grasa mascarilla yogur cúrcuma antibacterial">
+                <div class="problem-card" data-category="mascarillas">
                     <div class="problem-header oily-skin-header">
                         <h3>Antibacterial</h3>
                     </div>
@@ -991,25 +756,8 @@
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="mascarillas" data-tags="piel grasa mascarilla carbón activado arcilla bentonita desintoxicante">
-                    <div class="problem-header oily-skin-header">
-                        <h3>Limpieza Profunda</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Mascarilla de Carbón Activado</h3>
-                        <ul>
-                            <li>1 cápsula de carbón activado</li>
-                            <li>1 cucharada de arcilla bentonita</li>
-                            <li>2 cucharadas de agua de rosas</li>
-                        </ul>
-                        <p>Mezcla todos los ingredientes. Aplica sobre el rostro y deja secar 10-15 minutos. Enjuaga con agua tibia.</p>
-                        <span class="benefit-tag">Desintoxicante</span>
-                        <span class="benefit-tag">Limpieza profunda</span>
-                    </div>
-                </div>
-                
-                <!-- EXFOLIANTES (3) -->
-                <div class="problem-card" data-category="exfoliantes" data-tags="piel grasa exfoliante carbón activado miel puntos negros">
+                <!-- EXFOLIANTES -->
+                <div class="problem-card" data-category="exfoliantes">
                     <div class="problem-header oily-skin-header">
                         <h3>Limpieza de Poros</h3>
                     </div>
@@ -1026,42 +774,8 @@
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="exfoliantes" data-tags="piel grasa exfoliante avena miel limón suavizante">
-                    <div class="problem-header oily-skin-header">
-                        <h3>Suavizante</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Exfoliante de Avena y Miel</h3>
-                        <ul>
-                            <li>2 cucharadas de avena molida</li>
-                            <li>1 cucharada de miel</li>
-                            <li>1 cucharadita de jugo de limón</li>
-                        </ul>
-                        <p>Mezcla todos los ingredientes. Aplica con masajes suaves. Enjuaga con agua fría.</p>
-                        <span class="benefit-tag">Suavizante</span>
-                        <span class="benefit-tag">Equilibrante</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="exfoliantes" data-tags="piel grasa exfoliante café jojoba revitalizante">
-                    <div class="problem-header oily-skin-header">
-                        <h3>Revitalizante</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Exfoliante de Café</h3>
-                        <ul>
-                            <li>2 cucharadas de café molido usado</li>
-                            <li>1 cucharada de aceite de jojoba</li>
-                            <li>1 cucharadita de azúcar moreno</li>
-                        </ul>
-                        <p>Mezcla todos los ingredientes. Aplica con masajes circulares suaves. Enjuaga con agua tibia.</p>
-                        <span class="benefit-tag">Revitalizante</span>
-                        <span class="benefit-tag">Antioxidante</span>
-                    </div>
-                </div>
-                
-                <!-- TÓNICOS (3) -->
-                <div class="problem-card" data-category="tonicos" data-tags="piel grasa tónico agua rosas limón poros">
+                <!-- TÓNICOS -->
+                <div class="problem-card" data-category="tonicos">
                     <div class="problem-header oily-skin-header">
                         <h3>Minimizador de Poros</h3>
                     </div>
@@ -1078,42 +792,8 @@
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="tonicos" data-tags="piel grasa tónico aloe vera agua rosas refrescante">
-                    <div class="problem-header oily-skin-header">
-                        <h3>Refrescante</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Tónico de Aloe Vera</h3>
-                        <ul>
-                            <li>3 cucharadas de gel de aloe vera</li>
-                            <li>2 cucharadas de agua de rosas</li>
-                            <li>1 cucharadita de hamamelis</li>
-                        </ul>
-                        <p>Mezcla todos los ingredientes. Conserva en refrigeración. Aplica con un algodón.</p>
-                        <span class="benefit-tag">Refrescante</span>
-                        <span class="benefit-tag">Calmante</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="tonicos" data-tags="piel grasa tónico té verde menta equilibrante">
-                    <div class="problem-header oily-skin-header">
-                        <h3>Equilibrante</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Tónico de Té Verde y Menta</h3>
-                        <ul>
-                            <li>1/2 taza de té verde frío</li>
-                            <li>2 cucharadas de hamamelis</li>
-                            <li>5 hojas de menta fresca</li>
-                        </ul>
-                        <p>Tritura la menta en el té verde, añade el hamamelis. Filtra y aplica con un algodón.</p>
-                        <span class="benefit-tag">Equilibrante</span>
-                        <span class="benefit-tag">Refrescante</span>
-                    </div>
-                </div>
-                
-                <!-- ACNÉ (3) -->
-                <div class="problem-card" data-category="acne" data-tags="piel grasa acné tratamiento árbol té antibacterial">
+                <!-- ACNÉ -->
+                <div class="problem-card" data-category="acne">
                     <div class="problem-header oily-skin-header">
                         <h3>Acné y Espinillas</h3>
                     </div>
@@ -1130,7 +810,7 @@
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="acne" data-tags="piel grasa acné mascarilla arcilla tea tree">
+                <div class="problem-card" data-category="acne">
                     <div class="problem-header oily-skin-header">
                         <h3>Mascarilla para Acné</h3>
                     </div>
@@ -1146,23 +826,6 @@
                         <span class="benefit-tag">Antiséptica</span>
                     </div>
                 </div>
-                
-                <div class="problem-card" data-category="acne" data-tags="piel grasa acné tónico salicílico natural limón">
-                    <div class="problem-header oily-skin-header">
-                        <h3>Tónico para Acné</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Tónico de Limón y Hamamelis</h3>
-                        <ul>
-                            <li>3 cucharadas de hamamelis</li>
-                            <li>1 cucharada de jugo de limón</li>
-                            <li>5 gotas de aceite esencial de árbol de té</li>
-                        </ul>
-                        <p>Mezcla todos los ingredientes. Aplica con algodón en las zonas afectadas dos veces al día.</p>
-                        <span class="benefit-tag">Astringente</span>
-                        <span class="benefit-tag">Antibacterial</span>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -1176,24 +839,18 @@
                 La piel mixta requiere un equilibrio perfecto entre hidratación en las zonas secas y control de sebo en la zona T. Estos tratamientos te ayudarán a balancear tu piel de manera natural.
             </p>
             
-            <div class="search-results" id="mixed-skin-search-results">
-                <h3>Resultados de búsqueda para: <span id="mixed-search-query"></span></h3>
-                <div id="mixed-search-results-container"></div>
-            </div>
-            
             <div class="category-filter">
                 <button class="filter-btn active" data-category="all">Todos</button>
                 <button class="filter-btn" data-category="hidratantes">Hidratantes</button>
                 <button class="filter-btn" data-category="mascarillas">Mascarillas</button>
                 <button class="filter-btn" data-category="exfoliantes">Exfoliantes</button>
                 <button class="filter-btn" data-category="tonicos">Tónicos</button>
-                <button class="filter-btn" data-category="balance">Balance</button>
-                <button class="filter-btn" data-category="zonal">Tratamiento Zonal</button>
+                <button class="filter-btn" data-category="acne">Acné</button>
             </div>
             
             <div class="problems-grid">
-                <!-- HIDRATANTES (3) -->
-                <div class="problem-card" data-category="hidratantes" data-tags="piel mixta hidratante aloe vera jojoba balance">
+                <!-- HIDRATANTES -->
+                <div class="problem-card" data-category="hidratantes">
                     <div class="problem-header mixed-skin-header">
                         <h3>Balance Hidratante</h3>
                     </div>
@@ -1210,42 +867,8 @@
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="hidratantes" data-tags="piel mixta gel aloe vera pepino hidratación ligera">
-                    <div class="problem-header mixed-skin-header">
-                        <h3>Hidratación Ligera</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Gel de Aloe Vera y Pepino</h3>
-                        <ul>
-                            <li>3 cucharadas de gel de aloe vera</li>
-                            <li>2 cucharadas de jugo de pepino</li>
-                            <li>5 gotas de aceite esencial de neroli</li>
-                        </ul>
-                        <p>Mezcla todos los ingredientes. Conserva en refrigeración. Aplica una capa fina como hidratante diario.</p>
-                        <span class="benefit-tag">Hidratante ligero</span>
-                        <span class="benefit-tag">Refrescante</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="hidratantes" data-tags="piel mixta suero jojoba tea tree equilibrante">
-                    <div class="problem-header mixed-skin-header">
-                        <h3>Suero Equilibrante</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Suero de Jojoba y Tea Tree</h3>
-                        <ul>
-                            <li>1 cucharada de aceite de jojoba</li>
-                            <li>3 gotas de aceite de árbol de té</li>
-                            <li>5 gotas de aceite esencial de lavanda</li>
-                        </ul>
-                        <p>Mezcla los aceites. Aplica 2-3 gotas en rostro, evitando exceso en zona T.</p>
-                        <span class="benefit-tag">Equilibrante</span>
-                        <span class="benefit-tag">Regulador</span>
-                    </div>
-                </div>
-                
-                <!-- MASCARILLAS (3) -->
-                <div class="problem-card" data-category="mascarillas" data-tags="piel mixta mascarilla plátano miel equilibrio">
+                <!-- MASCARILLAS -->
+                <div class="problem-card" data-category="mascarillas">
                     <div class="problem-header mixed-skin-header">
                         <h3>Balance Natural</h3>
                     </div>
@@ -1262,42 +885,8 @@
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="mascarillas" data-tags="piel mixta mascarilla avena yogur multiusos">
-                    <div class="problem-header mixed-skin-header">
-                        <h3>Multizona</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Mascarilla de Avena y Yogur</h3>
-                        <ul>
-                            <li>2 cucharadas de avena molida</li>
-                            <li>1 cucharada de yogur natural</li>
-                            <li>1 cucharadita de miel (para zonas secas)</li>
-                        </ul>
-                        <p>Mezcla la avena con yogur. Aplica en todo el rostro, añadiendo un poco más de miel en las zonas secas.</p>
-                        <span class="benefit-tag">Multiusos</span>
-                        <span class="benefit-tag">Adaptable</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="mascarillas" data-tags="piel mixta mascarilla arcilla aloe vera dual">
-                    <div class="problem-header mixed-skin-header">
-                        <h3>Purificante e Hidratante</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Mascarilla de Arcilla y Aloe Vera</h3>
-                        <ul>
-                            <li>1 cucharada de arcilla verde (para zona T)</li>
-                            <li>2 cucharadas de gel de aloe vera (para mejillas)</li>
-                            <li>1 cucharadita de miel (opcional para zonas secas)</li>
-                        </ul>
-                        <p>Aplica arcilla en zona T y aloe vera en mejillas. Deja actuar 15 minutos. Enjuaga.</p>
-                        <span class="benefit-tag">Dual</span>
-                        <span class="benefit-tag">Multizona</span>
-                    </div>
-                </div>
-                
-                <!-- EXFOLIANTES (3) -->
-                <div class="problem-card" data-category="exfoliantes" data-tags="piel mixta exfoliante azúcar miel adaptable">
+                <!-- EXFOLIANTES -->
+                <div class="problem-card" data-category="exfoliantes">
                     <div class="problem-header mixed-skin-header">
                         <h3>Exfoliación Adaptada</h3>
                     </div>
@@ -1305,7 +894,7 @@
                         <h3>Exfoliante de Azúcar y Miel</h3>
                         <ul>
                             <li>2 cucharadas de azúcar moreno</li>
-                            <li>1 cucharada de miel</li>
+                            <li>1 cucharada of miel</li>
                             <li>1 cucharada de aceite de coco (para mejillas)</li>
                         </ul>
                         <p>Mezcla el azúcar con la miel. Añade más aceite de coco para las zonas secas. Exfolia con suaves movimientos circulares.</p>
@@ -1314,42 +903,8 @@
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="exfoliantes" data-tags="piel mixta exfoliante papaya avena suavizante">
-                    <div class="problem-header mixed-skin-header">
-                        <h3>Suavizante</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Exfoliante de Papaya</h3>
-                        <ul>
-                            <li>2 cucharadas of papaya madura triturada</li>
-                            <li>1 cucharada de avena molida</li>
-                            <li>1 cucharadita de miel</li>
-                        </ul>
-                        <p>Mezcla todos los ingredientes. Aplica suavemente con movimientos circulares. Deja actuar 10 minutos y enjuaga.</p>
-                        <span class="benefit-tag">Suavizante</span>
-                        <span class="benefit-tag">Enzimático</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="exfoliantes" data-tags="piel mixta exfoliante piña avena enzimático">
-                    <div class="problem-header mixed-skin-header">
-                        <h3>Enzimático</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Exfoliante de Piña y Avena</h3>
-                        <ul>
-                            <li>2 cucharadas de piña triturada</li>
-                            <li>1 cucharada de avena molida</li>
-                            <li>1 cucharadita de miel</li>
-                        </ul>
-                        <p>Mezcla todos los ingredientes. Aplica sobre el rostro con suaves movimientos. Deja actuar 5 minutos y enjuaga.</p>
-                        <span class="benefit-tag">Enzimático</span>
-                        <span class="benefit-tag">Suave</span>
-                    </div>
-                </div>
-                
-                <!-- TÓNICOS (3) -->
-                <div class="problem-card" data-category="tonicos" data-tags="piel mixta tónico té verde lavanda equilibrante">
+                <!-- TÓNICOS -->
+                <div class="problem-card" data-category="tonicos">
                     <div class="problem-header mixed-skin-header">
                         <h3>Equilibrante</h3>
                     </div>
@@ -1366,42 +921,8 @@
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="tonicos" data-tags="piel mixta tónico agua rosas pepino refrescante">
-                    <div class="problem-header mixed-skin-header">
-                        <h3>Refrescante</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Tónico de Agua de Rosas y Pepino</h3>
-                        <ul>
-                            <li>1/2 taza de agua de rosas</li>
-                            <li>2 cucharadas de jugo de pepino</li>
-                            <li>1 cucharadita de hamamelis</li>
-                        </ul>
-                        <p>Mezcla todos los ingredientes. Conserva en refrigeración. Aplica con un algodón por la mañana.</p>
-                        <span class="benefit-tag">Refrescante</span>
-                        <span class="benefit-tag">Hidratante</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="tonicos" data-tags="piel mixta tónico hamamelis menta minimizador poros">
-                    <div class="problem-header mixed-skin-header">
-                        <h3>Minimizador de Poros</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Tónico de Hamamelis y Menta</h3>
-                        <ul>
-                            <li>1/4 taza de hamamelis</li>
-                            <li>1/4 taza de agua destilada</li>
-                            <li>5 hojas de menta fresca</li>
-                        </ul>
-                        <p>Machaca las hojas de menta en el hamamelis, añade el agua. Filtra después de 24 horas. Aplica en zona T.</p>
-                        <span class="benefit-tag">Minimizador</span>
-                        <span class="benefit-tag">Refrescante</span>
-                    </div>
-                </div>
-                
-                <!-- ACNÉ (3) -->
-                <div class="problem-card" data-category="acne" data-tags="piel mixta acné tratamiento árbol té antiinflamatorio">
+                <!-- ACNÉ -->
+                <div class="problem-card" data-category="acne">
                     <div class="problem-header mixed-skin-header">
                         <h3>Acné</h3>
                     </div>
@@ -1418,7 +939,7 @@
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="acne" data-tags="piel mixta acné mascarilla miel canela antibacterial">
+                <div class="problem-card" data-category="acne">
                     <div class="problem-header mixed-skin-header">
                         <h3>Mascarilla para Acné</h3>
                     </div>
@@ -1432,23 +953,6 @@
                         <p>Mezcla todos los ingredientes. Aplica sobre las áreas con acné. Deja actuar 15 minutos. Enjuaga.</p>
                         <span class="benefit-tag">Antibacterial</span>
                         <span class="benefit-tag">Antiinflamatorio</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="acne" data-tags="piel mixta acné tónico hamamelis lavanda">
-                    <div class="problem-header mixed-skin-header">
-                        <h3>Tónico para Acné</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Tónico de Hamamelis y Lavanda</h3>
-                        <ul>
-                            <li>1/2 taza de hamamelis</li>
-                            <li>10 gotas de aceite esencial de lavanda</li>
-                            <li>2 cucharadas de agua de rosas</li>
-                        </ul>
-                        <p>Mezcla todos los ingredientes. Aplica con un algodón en las zonas afectadas dos veces al día.</p>
-                        <span class="benefit-tag">Astringente suave</span>
-                        <span class="benefit-tag">Calmante</span>
                     </div>
                 </div>
             </div>
@@ -1485,9 +989,6 @@
                 btn.classList.add('active');
             });
             
-            // Ocultar resultados de búsqueda
-            document.getElementById(`${pageId}-skin-search-results`).style.display = 'none';
-            
             // Mostrar todas las recetas
             filterRecipes('all', pageId);
         }
@@ -1503,62 +1004,6 @@
                     recipe.style.display = 'none';
                 }
             });
-        }
-        
-        // Función para buscar recetas
-        function searchRecipes(query, pageId) {
-            const resultsContainer = document.getElementById(`${pageId}-search-results-container`);
-            const searchQueryElement = document.getElementById(`${pageId}-search-query`);
-            const searchResultsElement = document.getElementById(`${pageId}-skin-search-results`);
-            
-            // Limpiar resultados anteriores
-            resultsContainer.innerHTML = '';
-            
-            // Mostrar el término de búsqueda
-            searchQueryElement.textContent = query;
-            
-            // Si la query está vacía, ocultar resultados
-            if (!query.trim()) {
-                searchResultsElement.style.display = 'none';
-                filterRecipes('all', pageId);
-                return;
-            }
-            
-            // Buscar recetas que coincidan
-            const recipes = document.querySelectorAll(`#${pageId}-page .problem-card`);
-            let foundResults = false;
-            const searchTerms = query.toLowerCase().split(' ');
-            
-            recipes.forEach(recipe => {
-                const tags = recipe.getAttribute('data-tags').toLowerCase();
-                const title = recipe.querySelector('h3').textContent.toLowerCase();
-                const header = recipe.querySelector('.problem-header h3').textContent.toLowerCase();
-                const content = recipe.textContent.toLowerCase();
-                
-                // Verificar si todos los términos de búsqueda coinciden
-                const matches = searchTerms.every(term => 
-                    tags.includes(term) || title.includes(term) || header.includes(term) || content.includes(term)
-                );
-                
-                if (matches) {
-                    foundResults = true;
-                    const clone = recipe.cloneNode(true);
-                    resultsContainer.appendChild(clone);
-                }
-            });
-            
-            // Mostrar u ocultar resultados
-            if (foundResults) {
-                searchResultsElement.style.display = 'block';
-                // Ocultar todas las recetas normales
-                recipes.forEach(recipe => {
-                    recipe.style.display = 'none';
-                });
-            } else {
-                searchResultsElement.style.display = 'none';
-                filterRecipes('all', pageId);
-                alert('No se encontraron resultados para: ' + query);
-            }
         }
         
         // Inicializar la página mostrando la página de inicio
@@ -1653,45 +1098,9 @@
                     // Añadir clase active al botón clickeado
                     this.classList.add('active');
                     
-                    // Ocultar resultados de búsqueda
-                    document.getElementById(`${currentPage}-skin-search-results`).style.display = 'none';
-                    
                     // Filtrar recetas
                     filterRecipes(this.getAttribute('data-category'), currentPage);
                 });
-            });
-            
-            // Añadir event listener al botón de búsqueda
-            document.getElementById('search-button').addEventListener('click', function(e) {
-                e.preventDefault();
-                const searchQuery = document.getElementById('search-input').value.trim();
-                
-                // Determinar la página actual
-                let currentPage = '';
-                if (document.getElementById('dry-skin-page').style.display === 'block') {
-                    currentPage = 'dry-skin';
-                } else if (document.getElementById('oily-skin-page').style.display === 'block') {
-                    currentPage = 'oily-skin';
-                } else if (document.getElementById('mixed-skin-page').style.display === 'block') {
-                    currentPage = 'mixed-skin';
-                } else {
-                    // Si estamos en la página de inicio, buscar en todas las páginas
-                    if (searchQuery) {
-                        alert('Por favor, selecciona un tipo de piel para buscar recetas específicas.');
-                    }
-                    return;
-                }
-                
-                // Realizar la búsqueda
-                searchRecipes(searchQuery, currentPage);
-            });
-            
-            // Añadir event listener para la tecla Enter en el buscador
-            document.getElementById('search-input').addEventListener('keypress', function(e) {
-                if (e.key === 'Enter') {
-                    e.preventDefault();
-                    document.getElementById('search-button').click();
-                }
             });
         });
     </script>
