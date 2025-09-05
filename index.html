@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remedios Naturales para el Cuidado de la Piel</title>
+    <title>NaturalSkin - Remedios Naturales para el Cuidado de tu Piel</title>
+    <meta name="description" content="Descubre los mejores remedios naturales para el cuidado de la piel según tu tipo: seca, grasa, mixta. Soluciones para acné, puntos negros, manchas y más.">
+    <meta name="keywords" content="remedios naturales, cuidado de la piel, piel seca, piel grasa, piel mixta, acné, puntos negros, manchas, belleza natural, skincare natural">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -65,7 +67,6 @@
         nav ul {
             display: flex;
             list-style: none;
-            align-items: center;
         }
         
         nav ul li {
@@ -195,6 +196,10 @@
             min-height: calc(100vh - 80px);
         }
         
+        .remedies-page.active {
+            display: block;
+        }
+        
         .back-btn {
             display: inline-flex;
             align-items: center;
@@ -286,7 +291,6 @@
             border-radius: 20px;
             font-size: 12px;
             margin-top: 10px;
-            margin-right: 5px;
         }
         
         /* Category Filter */
@@ -311,6 +315,47 @@
         .filter-btn:hover, .filter-btn.active {
             background-color: var(--primary);
             color: white;
+        }
+        
+        /* Newsletter */
+        .newsletter {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .newsletter h2 {
+            margin-bottom: 20px;
+        }
+        
+        .newsletter p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 50px 0 0 50px;
+            outline: none;
+        }
+        
+        .newsletter-form button {
+            background-color: var(--accent);
+            color: #333;
+            border: none;
+            padding: 0 25px;
+            border-radius: 0 50px 50px 0;
+            font-weight: 600;
+            cursor: pointer;
         }
         
         /* Footer */
@@ -384,7 +429,7 @@
         }
         
         /* Responsive */
-        @media (max-width: 968px) {
+        @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
                 text-align: center;
@@ -397,7 +442,7 @@
             }
             
             nav ul li {
-                margin: 10px;
+                margin: 0 10px;
             }
             
             .hero h1 {
@@ -410,6 +455,20 @@
             
             .problems-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+            
+            .newsletter-form input {
+                border-radius: 50px;
+                margin-bottom: 10px;
+            }
+            
+            .newsletter-form button {
+                border-radius: 50px;
+                padding: 15px;
             }
             
             .category-filter {
@@ -480,6 +539,18 @@
             </div>
         </div>
 
+        <!-- Newsletter -->
+        <div class="newsletter">
+            <div class="container">
+                <h2>Suscríbete a Nuestro Newsletter</h2>
+                <p>Recibe semanalmente recetas naturales, consejos de cuidado de la piel y promociones exclusivas.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit">Suscribirme</button>
+                </form>
+            </div>
+        </div>
+
         <!-- Footer -->
         <footer>
             <div class="container">
@@ -536,11 +607,10 @@
                 <button class="filter-btn" data-category="mascarillas">Mascarillas</button>
                 <button class="filter-btn" data-category="exfoliantes">Exfoliantes</button>
                 <button class="filter-btn" data-category="tonicos">Tónicos</button>
-                <button class="filter-btn" data-category="acne">Acné</button>
             </div>
             
             <div class="problems-grid">
-                <!-- HIDRATANTES -->
+                <!-- HIDRATANTES (3) -->
                 <div class="problem-card" data-category="hidratantes">
                     <div class="problem-header dry-skin-header">
                         <h3>Hidratación Intensa</h3>
@@ -554,7 +624,6 @@
                         </ul>
                         <p>Mezcla todos los ingredientes. Aplica sobre el rostro con suaves masajes circulares antes de dormir. No enjuagues.</p>
                         <span class="benefit-tag">Regenerador</span>
-                        <span class="benefit-tag">Hidratante</span>
                     </div>
                 </div>
                 
@@ -571,11 +640,26 @@
                         </ul>
                         <p>Mezcla los aceites en un frasco de vidrio. Aplica 2-3 gotas en el rostro después de la limpieza, antes de la crema hidratante.</p>
                         <span class="benefit-tag">Nutritivo</span>
-                        <span class="benefit-tag">Regenerador</span>
                     </div>
                 </div>
                 
-                <!-- MASCARILLAS -->
+                <div class="problem-card" data-category="hidratantes">
+                    <div class="problem-header dry-skin-header">
+                        <h3>Hidratación Nocturna</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Bálsamo Nocturno de Karité</h3>
+                        <ul>
+                            <li>1 cucharada de manteca de karité</li>
+                            <li>1 cucharadita de aceite de almendras</li>
+                            <li>3 gotas de aceite esencial de incienso</li>
+                        </ul>
+                        <p>Derrite la manteca de karité al baño maría, añade los aceites. Aplica una capa fina antes de dormir.</p>
+                        <span class="benefit-tag">Reparador</span>
+                    </div>
+                </div>
+                
+                <!-- MASCARILLAS (3) -->
                 <div class="problem-card" data-category="mascarillas">
                     <div class="problem-header dry-skin-header">
                         <h3>Nutrición Intensa</h3>
@@ -589,7 +673,6 @@
                         </ul>
                         <p>Machaca el aguacate y mezcla con miel y aceite. Aplica sobre el rostro durante 20 minutos. Enjuaga con agua tibia.</p>
                         <span class="benefit-tag">Hidratante profunda</span>
-                        <span class="benefit-tag">Nutritiva</span>
                     </div>
                 </div>
                 
@@ -606,11 +689,26 @@
                         </ul>
                         <p>Machaca el plátano hasta hacer puré, añade miel y aceite. Aplica durante 15-20 minutos. Enjuaga con agua tibia.</p>
                         <span class="benefit-tag">Nutritiva</span>
-                        <span class="benefit-tag">Calmante</span>
                     </div>
                 </div>
                 
-                <!-- EXFOLIANTES -->
+                <div class="problem-card" data-category="mascarillas">
+                    <div class="problem-header dry-skin-header">
+                        <h3>Revitalizante</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Mascarilla de Yogur y Miel</h3>
+                        <ul>
+                            <li>2 cucharadas de yogur natural</li>
+                            <li>1 cucharada de miel</li>
+                            <li>1 cucharadita de aceite de coco</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica sobre el rostro durante 15 minutos. Enjuaga con agua tibia.</p>
+                        <span class="benefit-tag">Revitalizante</span>
+                    </div>
+                </div>
+                
+                <!-- EXFOLIANTES (3) -->
                 <div class="problem-card" data-category="exfoliantes">
                     <div class="problem-header dry-skin-header">
                         <h3>Exfoliación Suave</h3>
@@ -624,11 +722,42 @@
                         </ul>
                         <p>Mezcla todos los ingredientes hasta formar una pasta. Masajea suavemente durante 3 minutos. Enjuaga con agua fría.</p>
                         <span class="benefit-tag">Suavizante</span>
-                        <span class="benefit-tag">Gentil</span>
                     </div>
                 </div>
                 
-                <!-- TÓNICOS -->
+                <div class="problem-card" data-category="exfoliantes">
+                    <div class="problem-header dry-skin-header">
+                        <h3>Exfoliación Nutritiva</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Exfoliante de Azúcar Moreno y Miel</h3>
+                        <ul>
+                            <li>2 cucharadas de azúcar moreno</li>
+                            <li>1 cucharada de miel</li>
+                            <li>1 cucharada de aceite de oliva</li>
+                        </ul>
+                        <p>Mezcla los ingredientes. Aplica con movimientos circulares suaves. Enjuaga con agua tibia.</p>
+                        <span class="benefit-tag">Nutritivo</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="exfoliantes">
+                    <div class="problem-header dry-skin-header">
+                        <h3>Exfoliación de Café</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Exfoliante de Café y Aceite de Coco</h3>
+                        <ul>
+                            <li>2 cucharadas de café molido</li>
+                            <li>1 cucharada de aceite de coco</li>
+                            <li>1 cucharadita de miel</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica con suaves masajes circulares. Enjuaga con agua tibia.</p>
+                        <span class="benefit-tag">Energizante</span>
+                    </div>
+                </div>
+                
+                <!-- TÓNICOS (3) -->
                 <div class="problem-card" data-category="tonicos">
                     <div class="problem-header dry-skin-header">
                         <h3>Hidratante y Calmante</h3>
@@ -642,42 +771,38 @@
                         </ul>
                         <p>Hierve los pétalos de rosa en el agua durante 5 minutos. Deja enfriar, cuela y añade el hamamelis. Aplica con un algodón.</p>
                         <span class="benefit-tag">Hidratante</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="tonicos">
+                    <div class="problem-header dry-skin-header">
+                        <h3>Calmante</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Tónico de Manzanilla y Lavanda</h3>
+                        <ul>
+                            <li>2 bolsas de té de manzanilla</li>
+                            <li>1 taza de agua hirviendo</li>
+                            <li>5 gotas de aceite esencial de lavanda</li>
+                        </ul>
+                        <p>Prepara una infusión con la manzanilla. Cuando esté fría, añade el aceite de lavanda. Aplica con un algodón.</p>
                         <span class="benefit-tag">Calmante</span>
                     </div>
                 </div>
                 
-                <!-- ACNÉ -->
-                <div class="problem-card" data-category="acne">
+                <div class="problem-card" data-category="tonicos">
                     <div class="problem-header dry-skin-header">
-                        <h3>Acné Suave</h3>
+                        <h3>Revitalizante</h3>
                     </div>
                     <div class="problem-content">
-                        <h3>Tratamiento Localizado de Árbol de Té</h3>
+                        <h3>Tónico de Pepino y Menta</h3>
                         <ul>
-                            <li>5 gotas de aceite de árbol de té</li>
-                            <li>1 cucharada de aceite de jojoba</li>
-                            <li>Algodón o hisopo</li>
+                            <li>1/2 pepino mediano</li>
+                            <li>1 cucharada de hojas de menta fresca</li>
+                            <li>1 taza de agua de rosas</li>
                         </ul>
-                        <p>Mezcla los aceites. Aplica directamente sobre los granos con un hisopo. No enjuagues.</p>
-                        <span class="benefit-tag">Antibacterial</span>
-                        <span class="benefit-tag">Antiinflamatorio</span>
-                    </div>
-                </div>
-                
-                <div class="problem-card" data-category="acne">
-                    <div class="problem-header dry-skin-header">
-                        <h3>Mascarilla para Acné</h3>
-                    </div>
-                    <div class="problem-content">
-                        <h3>Mascarilla de Miel y Canela</h3>
-                        <ul>
-                            <li>2 cucharadas de miel</li>
-                            <li>1 cucharadita de canela en polvo</li>
-                            <li>1 cucharadita de aceite de coco</li>
-                        </ul>
-                        <p>Mezcla todos los ingredientes. Aplica sobre las áreas con acné. Deja actuar 15 minutos. Enjuaga.</p>
-                        <span class="benefit-tag">Antibacterial</span>
-                        <span class="benefit-tag">Antiinflamatorio</span>
+                        <p>Licúa el pepino con la menta y el agua de rosas. Cuela y guarda en refrigeración. Aplica por las mañanas.</p>
+                        <span class="benefit-tag">Revitalizante</span>
                     </div>
                 </div>
             </div>
@@ -699,11 +824,10 @@
                 <button class="filter-btn" data-category="mascarillas">Mascarillas</button>
                 <button class="filter-btn" data-category="exfoliantes">Exfoliantes</button>
                 <button class="filter-btn" data-category="tonicos">Tónicos</button>
-                <button class="filter-btn" data-category="acne">Acné</button>
             </div>
             
             <div class="problems-grid">
-                <!-- HIDRATANTES -->
+                <!-- HIDRATANTES (3) -->
                 <div class="problem-card" data-category="hidratantes">
                     <div class="problem-header oily-skin-header">
                         <h3>Hidratación Ligera</h3>
@@ -717,11 +841,42 @@
                         </ul>
                         <p>Mezcla todos los ingredientes. Aplica una capa fina como hidratante diario. No enjuagues.</p>
                         <span class="benefit-tag">Matificante</span>
-                        <span class="benefit-tag">Hidratante</span>
                     </div>
                 </div>
                 
-                <!-- MASCARILLAS -->
+                <div class="problem-card" data-category="hidratantes">
+                    <div class="problem-header oily-skin-header">
+                        <h3>Hidratación Balanceada</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Suero de Jojoba y Lavanda</h3>
+                        <ul>
+                            <li>2 cucharadas de aceite de jojoba</li>
+                            <li>5 gotas de aceite esencial de lavanda</li>
+                            <li>3 gotas de aceite esencial de limón</li>
+                        </ul>
+                        <p>Mezcla los aceites. Aplica 2-3 gotas en el rostro después de la limpieza.</p>
+                        <span class="benefit-tag">Balanceador</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="hidratantes">
+                    <div class="problem-header oily-skin-header">
+                        <h3>Hidratación sin Aceites</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Hidratante de Té Verde</h3>
+                        <ul>
+                            <li>1/4 taza de té verde fuerte frío</li>
+                            <li>1 cucharada de gel de aloe vera</li>
+                            <li>1 cucharadita de glicerina vegetal</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica sobre el rostro limpio. No enjuagues.</p>
+                        <span class="benefit-tag">Libre de aceites</span>
+                    </div>
+                </div>
+                
+                <!-- MASCARILLAS (3) -->
                 <div class="problem-card" data-category="mascarillas">
                     <div class="problem-header oily-skin-header">
                         <h3>Purificante</h3>
@@ -735,7 +890,6 @@
                         </ul>
                         <p>Mezcla la arcilla con el té verde hasta formar una pasta. Añade el aceite de árbol de té. Aplica y deja secar 15 minutos. Enjuaga.</p>
                         <span class="benefit-tag">Matificante</span>
-                        <span class="benefit-tag">Purificante</span>
                     </div>
                 </div>
                 
@@ -752,11 +906,26 @@
                         </ul>
                         <p>Combina todos los ingredientes. Aplica evitando el contorno de ojos. Deja actuar 15 minutos y enjuaga.</p>
                         <span class="benefit-tag">Antiséptica</span>
-                        <span class="benefit-tag">Antiinflamatoria</span>
                     </div>
                 </div>
                 
-                <!-- EXFOLIANTES -->
+                <div class="problem-card" data-category="mascarillas">
+                    <div class="problem-header oily-skin-header">
+                        <h3>Limpieza Profunda</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Mascarilla de Carbón Activado</h3>
+                        <ul>
+                            <li>1 cápsula de carbón activado</li>
+                            <li>1 cucharada de arcilla bentonita</li>
+                            <li>2 cucharadas de agua de rosas</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica sobre el rostro y deja secar 10-15 minutos. Enjuaga con agua tibia.</p>
+                        <span class="benefit-tag">Desintoxicante</span>
+                    </div>
+                </div>
+                
+                <!-- EXFOLIANTES (3) -->
                 <div class="problem-card" data-category="exfoliantes">
                     <div class="problem-header oily-skin-header">
                         <h3>Limpieza de Poros</h3>
@@ -770,11 +939,42 @@
                         </ul>
                         <p>Mezcla el carbón con la miel y el azúcar. Aplica con suaves masajes circulares en la zona T. Enjuaga con agua tibia.</p>
                         <span class="benefit-tag">Limpieza profunda</span>
-                        <span class="benefit-tag">Puntos negros</span>
                     </div>
                 </div>
                 
-                <!-- TÓNICOS -->
+                <div class="problem-card" data-category="exfoliantes">
+                    <div class="problem-header oily-skin-header">
+                        <h3>Suavizante</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Exfoliante de Avena y Miel</h3>
+                        <ul>
+                            <li>2 cucharadas de avena molida</li>
+                            <li>1 cucharada de miel</li>
+                            <li>1 cucharadita de jugo de limón</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica con masajes suaves. Enjuaga con agua fría.</p>
+                        <span class="benefit-tag">Suavizante</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="exfoliantes">
+                    <div class="problem-header oily-skin-header">
+                        <h3>Revitalizante</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Exfoliante de Café</h3>
+                        <ul>
+                            <li>2 cucharadas de café molido usado</li>
+                            <li>1 cucharada de aceite de jojoba</li>
+                            <li>1 cucharadita de azúcar moreno</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica con masajes circulares suaves. Enjuaga con agua tibia.</p>
+                        <span class="benefit-tag">Revitalizante</span>
+                    </div>
+                </div>
+                
+                <!-- TÓNICOS (3) -->
                 <div class="problem-card" data-category="tonicos">
                     <div class="problem-header oily-skin-header">
                         <h3>Minimizador de Poros</h3>
@@ -788,42 +988,38 @@
                         </ul>
                         <p>Combina todos los ingredientes en una botella con spray. Aplica después de lavar tu rostro.</p>
                         <span class="benefit-tag">Minimiza poros</span>
-                        <span class="benefit-tag">Astringente</span>
                     </div>
                 </div>
                 
-                <!-- ACNÉ -->
-                <div class="problem-card" data-category="acne">
+                <div class="problem-card" data-category="tonicos">
                     <div class="problem-header oily-skin-header">
-                        <h3>Acné y Espinillas</h3>
+                        <h3>Refrescante</h3>
                     </div>
                     <div class="problem-content">
-                        <h3>Tratamiento de Ácido Salicílico Natural</h3>
+                        <h3>Tónico de Aloe Vera</h3>
                         <ul>
-                            <li>1 cucharada de harina de avena</li>
-                            <li>2 cucharadas de agua de hamamelis</li>
-                            <li>5 gotas de aceite esencial de árbol de té</li>
+                            <li>3 cucharadas de gel de aloe vera</li>
+                            <li>2 cucharadas de agua de rosas</li>
+                            <li>1 cucharadita de hamamelis</li>
                         </ul>
-                        <p>Mezcla todos los ingredientes hasta formar una pasta. Aplica directamente sobre las áreas con acné. Deja actuar 20 minutos y enjuaga.</p>
-                        <span class="benefit-tag">Antiacné</span>
-                        <span class="benefit-tag">Antibacterial</span>
+                        <p>Mezcla todos los ingredientes. Conserva en refrigeración. Aplica con un algodón.</p>
+                        <span class="benefit-tag">Refrescante</span>
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="acne">
+                <div class="problem-card" data-category="tonicos">
                     <div class="problem-header oily-skin-header">
-                        <h3>Mascarilla para Acné</h3>
+                        <h3>Equilibrante</h3>
                     </div>
                     <div class="problem-content">
-                        <h3>Mascarilla de Arcilla y Tea Tree</h3>
+                        <h3>Tónico de Té Verde y Menta</h3>
                         <ul>
-                            <li>2 cucharadas de arcilla verde</li>
-                            <li>2 cucharadas de agua de hamamelis</li>
-                            <li>5 gotas de aceite de árbol de té</li>
+                            <li>1/2 taza de té verde frío</li>
+                            <li>2 cucharadas de hamamelis</li>
+                            <li>5 hojas de menta fresca</li>
                         </ul>
-                        <p>Mezcla la arcilla con hamamelis, añade el aceite. Aplica sobre zonas con acné. Deja secar 15 minutos. Enjuaga.</p>
-                        <span class="benefit-tag">Purificante</span>
-                        <span class="benefit-tag">Antiséptica</span>
+                        <p>Tritura la menta en el té verde, añade el hamamelis. Filtra y aplica con un algodón.</p>
+                        <span class="benefit-tag">Equilibrante</span>
                     </div>
                 </div>
             </div>
@@ -845,11 +1041,10 @@
                 <button class="filter-btn" data-category="mascarillas">Mascarillas</button>
                 <button class="filter-btn" data-category="exfoliantes">Exfoliantes</button>
                 <button class="filter-btn" data-category="tonicos">Tónicos</button>
-                <button class="filter-btn" data-category="acne">Acné</button>
             </div>
             
             <div class="problems-grid">
-                <!-- HIDRATANTES -->
+                <!-- HIDRATANTES (3) -->
                 <div class="problem-card" data-category="hidratantes">
                     <div class="problem-header mixed-skin-header">
                         <h3>Balance Hidratante</h3>
@@ -863,11 +1058,42 @@
                         </ul>
                         <p>Mezcla todos los ingredientes. Aplica como crema hidratante, usando menos cantidad en la zona T.</p>
                         <span class="benefit-tag">Hidratante balanceada</span>
-                        <span class="benefit-tag">No comedogénica</span>
                     </div>
                 </div>
                 
-                <!-- MASCARILLAS -->
+                <div class="problem-card" data-category="hidratantes">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Hidratación Ligera</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Gel de Aloe Vera y Pepino</h3>
+                        <ul>
+                            <li>3 cucharadas de gel de aloe vera</li>
+                            <li>2 cucharadas de jugo de pepino</li>
+                            <li>5 gotas de aceite esencial de neroli</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Conserva en refrigeración. Aplica una capa fina como hidratante diario.</p>
+                        <span class="benefit-tag">Hidratante ligero</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="hidratantes">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Suero Equilibrante</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Suero de Jojoba y Tea Tree</h3>
+                        <ul>
+                            <li>1 cucharada de aceite de jojoba</li>
+                            <li>3 gotas de aceite de árbol de té</li>
+                            <li>5 gotas de aceite esencial de lavanda</li>
+                        </ul>
+                        <p>Mezcla los aceites. Aplica 2-3 gotas en rostro, evitando exceso en zona T.</p>
+                        <span class="benefit-tag">Equilibrante</span>
+                    </div>
+                </div>
+                
+                <!-- MASCARILLAS (3) -->
                 <div class="problem-card" data-category="mascarillas">
                     <div class="problem-header mixed-skin-header">
                         <h3>Balance Natural</h3>
@@ -881,11 +1107,42 @@
                         </ul>
                         <p>Machaca el plátano y mezcla con miel. Aplica en todo el rostro, añadiendo un poco de limón solo en la zona T.</p>
                         <span class="benefit-tag">Equilibrante</span>
-                        <span class="benefit-tag">Nutritiva</span>
                     </div>
                 </div>
                 
-                <!-- EXFOLIANTES -->
+                <div class="problem-card" data-category="mascarillas">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Multizona</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Mascarilla de Avena y Yogur</h3>
+                        <ul>
+                            <li>2 cucharadas de avena molida</li>
+                            <li>1 cucharada de yogur natural</li>
+                            <li>1 cucharadita de miel (para zonas secas)</li>
+                        </ul>
+                        <p>Mezcla la avena con yogur. Aplica en todo el rostro, añadiendo un poco más de miel en las zonas secas.</p>
+                        <span class="benefit-tag">Multiusos</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="mascarillas">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Purificante e Hidratante</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Mascarilla de Arcilla y Aloe Vera</h3>
+                        <ul>
+                            <li>1 cucharada de arcilla verde (para zona T)</li>
+                            <li>2 cucharadas de gel de aloe vera (para mejillas)</li>
+                            <li>1 cucharadita de miel (opcional para zonas secas)</li>
+                        </ul>
+                        <p>Aplica arcilla en zona T y aloe vera en mejillas. Deja actuar 15 minutos. Enjuaga.</p>
+                        <span class="benefit-tag">Dual</span>
+                    </div>
+                </div>
+                
+                <!-- EXFOLIANTES (3) -->
                 <div class="problem-card" data-category="exfoliantes">
                     <div class="problem-header mixed-skin-header">
                         <h3>Exfoliación Adaptada</h3>
@@ -894,16 +1151,47 @@
                         <h3>Exfoliante de Azúcar y Miel</h3>
                         <ul>
                             <li>2 cucharadas de azúcar moreno</li>
-                            <li>1 cucharada of miel</li>
+                            <li>1 cucharada de miel</li>
                             <li>1 cucharada de aceite de coco (para mejillas)</li>
                         </ul>
                         <p>Mezcla el azúcar con la miel. Añade más aceite de coco para las zonas secas. Exfolia con suaves movimientos circulares.</p>
                         <span class="benefit-tag">Adaptable</span>
-                        <span class="benefit-tag">Personalizable</span>
                     </div>
                 </div>
                 
-                <!-- TÓNICOS -->
+                <div class="problem-card" data-category="exfoliantes">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Suavizante</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Exfoliante de Papaya</h3>
+                        <ul>
+                            <li>2 cucharadas de papaya madura triturada</li>
+                            <li>1 cucharada de avena molida</li>
+                            <li>1 cucharadita de miel</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica suavemente con movimientos circulares. Deja actuar 10 minutos y enjuaga.</p>
+                        <span class="benefit-tag">Suavizante</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="exfoliantes">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Enzimático</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Exfoliante de Piña y Avena</h3>
+                        <ul>
+                            <li>2 cucharadas de piña triturada</li>
+                            <li>1 cucharada de avena molida</li>
+                            <li>1 cucharadita de miel</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica sobre el rostro con suaves movimientos. Deja actuar 5 minutos y enjuaga.</p>
+                        <span class="benefit-tag">Enzimático</span>
+                    </div>
+                </div>
+                
+                <!-- TÓNICOS (3) -->
                 <div class="problem-card" data-category="tonicos">
                     <div class="problem-header mixed-skin-header">
                         <h3>Equilibrante</h3>
@@ -917,42 +1205,38 @@
                         </ul>
                         <p>Combina todos los ingredientes. Aplica con un algodón después de limpiar el rostro.</p>
                         <span class="benefit-tag">Balanceador</span>
-                        <span class="benefit-tag">Antioxidante</span>
                     </div>
                 </div>
                 
-                <!-- ACNÉ -->
-                <div class="problem-card" data-category="acne">
+                <div class="problem-card" data-category="tonicos">
                     <div class="problem-header mixed-skin-header">
-                        <h3>Acné</h3>
+                        <h3>Refrescante</h3>
                     </div>
                     <div class="problem-content">
-                        <h3>Tratamiento Localizado de Árbol de Té</h3>
+                        <h3>Tónico de Agua de Rosas y Pepino</h3>
                         <ul>
-                            <li>5 gotas de aceite de árbol de té</li>
-                            <li>1 cucharada de aceite de jojoba</li>
-                            <li>Algodón o hisopo</li>
+                            <li>1/2 taza de agua de rosas</li>
+                            <li>2 cucharadas de jugo de pepino</li>
+                            <li>1 cucharadita de hamamelis</li>
                         </ul>
-                        <p>Mezcla los aceites. Aplica directamente sobre los granos con un hisopo. No enjuagues.</p>
-                        <span class="benefit-tag">Antibacterial</span>
-                        <span class="benefit-tag">Antiinflamatorio</span>
+                        <p>Mezcla todos los ingredientes. Conserva en refrigeración. Aplica con un algodón por la mañana.</p>
+                        <span class="benefit-tag">Refrescante</span>
                     </div>
                 </div>
                 
-                <div class="problem-card" data-category="acne">
+                <div class="problem-card" data-category="tonicos">
                     <div class="problem-header mixed-skin-header">
-                        <h3>Mascarilla para Acné</h3>
+                        <h3>Minimizador de Poros</h3>
                     </div>
                     <div class="problem-content">
-                        <h3>Mascarilla de Miel y Canela</h3>
+                        <h3>Tónico de Hamamelis y Menta</h3>
                         <ul>
-                            <li>2 cucharadas de miel</li>
-                            <li>1 cucharadita de canela en polvo</li>
-                            <li>1 cucharadita de aceite de coco</li>
+                            <li>1/4 taza de hamamelis</li>
+                            <li>1/4 taza de agua destilada</li>
+                            <li>5 hojas de menta fresca</li>
                         </ul>
-                        <p>Mezcla todos los ingredientes. Aplica sobre las áreas con acné. Deja actuar 15 minutos. Enjuaga.</p>
-                        <span class="benefit-tag">Antibacterial</span>
-                        <span class="benefit-tag">Antiinflamatorio</span>
+                        <p>Machaca las hojas de menta en el hamamelis, añade el agua. Filtra después de 24 horas. Aplica en zona T.</p>
+                        <span class="benefit-tag">Minimizador</span>
                     </div>
                 </div>
             </div>
@@ -1086,12 +1370,10 @@
                         currentPage = 'oily-skin';
                     } else if (document.getElementById('mixed-skin-page').style.display === 'block') {
                         currentPage = 'mixed-skin';
-                    } else {
-                        return;
                     }
                     
                     // Remover clase active de todos los botones de filtro
-                    document.querySelectorAll(`#${currentPage}-page .filter-btn`).forEach(btn => {
+                    document.querySelectorAll('.filter-btn').forEach(btn => {
                         btn.classList.remove('active');
                     });
                     
