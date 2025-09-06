@@ -610,7 +610,7 @@
             </div>
             
             <div class="problems-grid">
-                <!-- HIDRATANTES (3) -->
+                <!-- HIDRATANTES (6) -->
                 <div class="problem-card" data-category="hidratantes">
                     <div class="problem-header dry-skin-header">
                         <h3>Hidratación Intensa</h3>
@@ -659,7 +659,55 @@
                     </div>
                 </div>
                 
-                <!-- MASCARILLAS (3) -->
+                <div class="problem-card" data-category="hidratantes">
+                    <div class="problem-header dry-skin-header">
+                        <h3>Hidratación con Aloe Vera</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Gel de Aloe Vera y Pepino</h3>
+                        <ul>
+                            <li>3 cucharadas de gel de aloe vera</li>
+                            <li>2 cucharadas de jugo de pepino</li>
+                            <li>1 cucharadita de miel</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Conserva en refrigeración. Aplica sobre la piel limpia mañana y noche.</p>
+                        <span class="benefit-tag">Refrescante</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="hidratantes">
+                    <div class="problem-header dry-skin-header">
+                        <h3>Aceite Facial Nutritivo</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Mezcla de Aceites Esenciales</h3>
+                        <ul>
+                            <li>1 cucharada de aceite de argán</li>
+                            <li>1 cucharada de aceite de rosa mosqueta</li>
+                            <li>5 gotas de aceite esencial de geranio</li>
+                        </ul>
+                        <p>Combina los aceites en un frasco oscuro. Aplica 3-4 gotas en rostro y cuello con suaves movimientos ascendentes.</p>
+                        <span class="benefit-tag">Antienvejecimiento</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="hidratantes">
+                    <div class="problem-header dry-skin-header">
+                        <h3>Hidratante de Cacao</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Crema de Manteca de Cacao</h3>
+                        <ul>
+                            <li>2 cucharadas de manteca de cacao</li>
+                            <li>1 cucharada de aceite de almendras dulces</li>
+                            <li>5 gotas de aceite esencial de naranja</li>
+                        </ul>
+                        <p>Derrite la manteca de cacao al baño maría. Retira del fuego y añade los aceites. Bate hasta enfriar y aplicar.</p>
+                        <span class="benefit-tag">Protector</span>
+                    </div>
+                </div>
+                
+                <!-- MASCARILLAS (6) -->
                 <div class="problem-card" data-category="mascarillas">
                     <div class="problem-header dry-skin-header">
                         <h3>Nutrición Intensa</h3>
@@ -708,7 +756,55 @@
                     </div>
                 </div>
                 
-                <!-- EXFOLIANTES (3) -->
+                <div class="problem-card" data-category="mascarillas">
+                    <div class="problem-header dry-skin-header">
+                        <h3>Mascarilla de Avena</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Mascarilla de Avena y Plátano</h3>
+                        <ul>
+                            <li>2 cucharadas de avena molida</li>
+                            <li>1/2 plátano maduro</li>
+                            <li>1 cucharada de miel</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes hasta formar una pasta. Aplica durante 20 minutos y enjuaga con agua tibia.</p>
+                        <span class="benefit-tag">Calmante</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="mascarillas">
+                    <div class="problem-header dry-skin-header">
+                        <h3>Mascarilla de Miel y Canela</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Mascarilla Nutritiva</h3>
+                        <ul>
+                            <li>2 cucharadas de miel</li>
+                            <li>1 cucharadita de canela en polvo</li>
+                            <li>1 cucharada de aceite de oliva</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica sobre el rostro durante 15 minutos. Enjuaga con agua tibia.</p>
+                        <span class="benefit-tag">Antioxidante</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="mascarillas">
+                    <div class="problem-header dry-skin-header">
+                        <h3>Mascarilla de Aloe Vera</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Mascarilla Hidratante</h3>
+                        <ul>
+                            <li>3 cucharadas de gel de aloe vera</li>
+                            <li>1 cucharada de miel</li>
+                            <li>5 gotas de aceite esencial de lavanda</li>
+                        </ul>
+                        <p>Combina todos los ingredientes. Aplica una capa generosa y deja actuar 20 minutos. Enjuaga con agua fría.</p>
+                        <span class="benefit-tag">Regeneradora</span>
+                    </div>
+                </div>
+                
+                <!-- EXFOLIANTES (6) -->
                 <div class="problem-card" data-category="exfoliantes">
                     <div class="problem-header dry-skin-header">
                         <h3>Exfoliación Suave</h3>
@@ -757,7 +853,55 @@
                     </div>
                 </div>
                 
-                <!-- TÓNICOS (3) -->
+                <div class="problem-card" data-category="exfoliantes">
+                    <div class="problem-header dry-skin-header">
+                        <h3>Exfoliante de Almendras</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Exfoliante de Almendras y Miel</h3>
+                        <ul>
+                            <li>2 cucharadas de almendras molidas</li>
+                            <li>1 cucharada de miel</li>
+                            <li>1 cucharadita de aceite de jojoba</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica con masajes circulares suaves. Enjuaga con agua tibia.</p>
+                        <span class="benefit-tag">Renovador</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="exfoliantes">
+                    <div class="problem-header dry-skin-header">
+                        <h3>Exfoliante de Sal Marina</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Exfoliante Corporal de Sal</h3>
+                        <ul>
+                            <li>1/2 taza de sal marina</li>
+                            <li>1/4 taza de aceite de coco</li>
+                            <li>10 gotas de aceite esencial de lavanda</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Usa en la ducha con masajes circulares. Enjuaga completamente.</p>
+                        <span class="benefit-tag">Mineralizante</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="exfoliantes">
+                    <div class="problem-header dry-skin-header">
+                        <h3>Exfoliante de Papaya</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Exfoliante Enzimático de Papaya</h3>
+                        <ul>
+                            <li>3 cucharadas de papaya madura triturada</li>
+                            <li>1 cucharada de azúcar moreno</li>
+                            <li>1 cucharadita de miel</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica con suaves movimientos circulares. Deja actuar 5 minutos y enjuaga.</p>
+                        <span class="benefit-tag">Iluminador</span>
+                    </div>
+                </div>
+                
+                <!-- TÓNICOS (6) -->
                 <div class="problem-card" data-category="tonicos">
                     <div class="problem-header dry-skin-header">
                         <h3>Hidratante y Calmante</h3>
@@ -805,6 +949,54 @@
                         <span class="benefit-tag">Revitalizante</span>
                     </div>
                 </div>
+                
+                <div class="problem-card" data-category="tonicos">
+                    <div class="problem-header dry-skin-header">
+                        <h3>Tónico de Manzana</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Tónico de Vinagre de Manzana</h3>
+                        <ul>
+                            <li>1 cucharada de vinagre de manzana</li>
+                            <li>1/2 taza de agua destilada</li>
+                            <li>1 cucharadita de miel</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica con un algodón después de la limpieza. Ideal para equilibrar el pH.</p>
+                        <span class="benefit-tag">Equilibrante</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="tonicos">
+                    <div class="problem-header dry-skin-header">
+                        <h3>Tónico de Caléndula</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Tónico de Caléndula</h3>
+                        <ul>
+                            <li>2 cucharadas de pétalos de caléndula secos</li>
+                            <li>1 taza de agua hirviendo</li>
+                            <li>1 cucharada de hamamelis</li>
+                        </ul>
+                        <p>Infusiona los pétalos en agua hirviendo 15 minutos. Cuela y añade el hamamelis. Aplica con algodón.</p>
+                        <span class="benefit-tag">Antiinflamatorio</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="tonicos">
+                    <div class="problem-header dry-skin-header">
+                        <h3>Tónico de Té Verde</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Tónico Antioxidante</h3>
+                        <ul>
+                            <li>1 bolsa de té verde</li>
+                            <li>1 taza de agua hirviendo</li>
+                            <li>5 gotas de aceite esencial de neroli</li>
+                        </ul>
+                        <p>Prepara el té verde y deja enfriar. Añade el aceite esencial. Conserva en refrigeración y aplica con algodón.</p>
+                        <span class="benefit-tag">Antioxidante</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -827,7 +1019,7 @@
             </div>
             
             <div class="problems-grid">
-                <!-- HIDRATANTES (3) -->
+                <!-- HIDRATANTES (6) -->
                 <div class="problem-card" data-category="hidratantes">
                     <div class="problem-header oily-skin-header">
                         <h3>Hidratación Ligera</h3>
@@ -876,7 +1068,55 @@
                     </div>
                 </div>
                 
-                <!-- MASCARILLAS (3) -->
+                <div class="problem-card" data-category="hidratantes">
+                    <div class="problem-header oily-skin-header">
+                        <h3>Hidratante de Pepino</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Gel Refrescante de Pepino</h3>
+                        <ul>
+                            <li>1/2 pepino mediano</li>
+                            <li>2 cucharadas de gel de aloe vera</li>
+                            <li>1 cucharadita de hamamelis</li>
+                        </ul>
+                        <p>Licúa el pepino y cuela el jugo. Mezcla con aloe vera y hamamelis. Aplica como hidratante.</p>
+                        <span class="benefit-tag">Refrescante</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="hidratantes">
+                    <div class="problem-header oily-skin-header">
+                        <h3>Hidratante de Té Verde</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Crema de Té Verde</h3>
+                        <ul>
+                            <li>1/4 taza de té verde frío</li>
+                            <li>1 cucharada de aceite de jojoba</li>
+                            <li>1 cucharadita de cera de abejas</li>
+                        </ul>
+                        <p>Derrite la cera de abejas y mezcla con los demás ingredientes. Bate hasta enfriar. Aplica diariamente.</p>
+                        <span class="benefit-tag">Antioxidante</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="hidratantes">
+                    <div class="problem-header oily-skin-header">
+                        <h3>Hidratante de Rosa Mosqueta</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Suero de Rosa Mosqueta</h3>
+                        <ul>
+                            <li>2 cucharadas de aceite de rosa mosqueta</li>
+                            <li>5 gotas de aceite esencial de limón</li>
+                            <li>3 gotas de aceite esencial de árbol de té</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica 2-3 gotas en el rostro por la noche.</p>
+                        <span class="benefit-tag">Regenerador</span>
+                    </div>
+                </div>
+                
+                <!-- MASCARILLAS (6) -->
                 <div class="problem-card" data-category="mascarillas">
                     <div class="problem-header oily-skin-header">
                         <h3>Purificante</h3>
@@ -925,7 +1165,55 @@
                     </div>
                 </div>
                 
-                <!-- EXFOLIANTES (3) -->
+                <div class="problem-card" data-category="mascarillas">
+                    <div class="problem-header oily-skin-header">
+                        <h3>Mascarilla de Avena</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Mascarilla de Avena y Limón</h3>
+                        <ul>
+                            <li>2 cucharadas de avena molida</li>
+                            <li>1 cucharadita de jugo de limón</li>
+                            <li>2 cucharadas de agua de rosas</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica sobre el rostro y deja actuar 15 minutos. Enjuaga con agua fría.</p>
+                        <span class="benefit-tag">Limpieza suave</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="mascarillas">
+                    <div class="problem-header oily-skin-header">
+                        <h3>Mascarilla de Clara de Huevo</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Mascarilla de Clara de Huevo</h3>
+                        <ul>
+                            <li>1 clara de huevo</li>
+                            <li>1 cucharadita de jugo de limón</li>
+                            <li>1 cucharadita de miel</li>
+                        </ul>
+                        <p>Bate la clara a punto de nieve. Añade el limón y la miel. Aplica sobre el rostro y deja secar 15 minutos. Enjuaga.</p>
+                        <span class="benefit-tag">Reafirmante</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="mascarillas">
+                    <div class="problem-header oily-skin-header">
+                        <h3>Mascarilla de Tomate</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Mascarilla de Tomate</h3>
+                        <ul>
+                            <li>1 tomate mediano</li>
+                            <li>1 cucharadita de azúcar</li>
+                            <li>1 cucharadita de jugo de limón</li>
+                        </ul>
+                        <p>Tritura el tomate y mezcla con los demás ingredientes. Aplica sobre el rostro 15 minutos. Enjuaga.</p>
+                        <span class="benefit-tag">Astringente</span>
+                    </div>
+                </div>
+                
+                <!-- EXFOLIANTES (6) -->
                 <div class="problem-card" data-category="exfoliantes">
                     <div class="problem-header oily-skin-header">
                         <h3>Limpieza de Poros</h3>
@@ -974,7 +1262,55 @@
                     </div>
                 </div>
                 
-                <!-- TÓNICOS (3) -->
+                <div class="problem-card" data-category="exfoliantes">
+                    <div class="problem-header oily-skin-header">
+                        <h3>Exfoliante de Sal del Himalaya</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Exfoliante de Sal y Aceite de Jojoba</h3>
+                        <ul>
+                            <li>3 cucharadas de sal del Himalaya fina</li>
+                            <li>2 cucharadas de aceite de jojoba</li>
+                            <li>5 gotas de aceite esencial de menta</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica con suaves masajes circulares. Enjuaga con agua tibia.</p>
+                        <span class="benefit-tag">Mineralizante</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="exfoliantes">
+                    <div class="problem-header oily-skin-header">
+                        <h3>Exfoliante de Cáscara de Naranja</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Exfoliante de Cáscara de Naranja</h3>
+                        <ul>
+                            <li>2 cucharadas de cáscara de naranja molida</li>
+                            <li>1 cucharada de yogur natural</li>
+                            <li>1 cucharadita de miel</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica con masajes suaves. Enjuaga con agua fría.</p>
+                        <span class="benefit-tag">Vitamínico</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="exfoliantes">
+                    <div class="problem-header oily-skin-header">
+                        <h3>Exfoliante de Bicarbonato</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Exfoliante de Bicarbonato</h3>
+                        <ul>
+                            <li>2 cucharadas de bicarbonato de sodio</li>
+                            <li>1 cucharada de agua</li>
+                            <li>1 cucharadita de jugo de limón</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes hasta formar una pasta. Aplica con suaves masajes. Enjuaga inmediatamente.</p>
+                        <span class="benefit-tag">Alcalinizante</span>
+                    </div>
+                </div>
+                
+                <!-- TÓNICOS (6) -->
                 <div class="problem-card" data-category="tonicos">
                     <div class="problem-header oily-skin-header">
                         <h3>Minimizador de Poros</h3>
@@ -1022,6 +1358,54 @@
                         <span class="benefit-tag">Equilibrante</span>
                     </div>
                 </div>
+                
+                <div class="problem-card" data-category="tonicos">
+                    <div class="problem-header oily-skin-header">
+                        <h3>Tónico de Romero</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Tónico de Romero y Limón</h3>
+                        <ul>
+                            <li>2 ramitas de romero fresco</li>
+                            <li>1 taza de agua hirviendo</li>
+                            <li>1 cucharada de jugo de limón</li>
+                        </ul>
+                        <p>Infusiona el romero en el agua 15 minutos. Cuela y añade el limón. Aplica con algodón.</p>
+                        <span class="benefit-tag">Estimulante</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="tonicos">
+                    <div class="problem-header oily-skin-header">
+                        <h3>Tónico de Menta y Pepino</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Tónico Refrescante</h3>
+                        <ul>
+                            <li>1/4 pepino mediano</li>
+                            <li>5 hojas de menta fresca</li>
+                            <li>1/2 taza de agua de hamamelis</li>
+                        </ul>
+                        <p>Licúa el pepino con la menta. Cuela y mezcla con el hamamelis. Aplica con algodón.</p>
+                        <span class="benefit-tag">Refrescante</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="tonicos">
+                    <div class="problem-header oily-skin-header">
+                        <h3>Tónico de Lavanda</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Tónico de Lavanda</h3>
+                        <ul>
+                            <li>2 cucharadas de flores de lavanda secas</li>
+                            <li>1 taza de agua hirviendo</li>
+                            <li>1 cucharada de hamamelis</li>
+                        </ul>
+                        <p>Infusiona la lavanda 20 minutos. Cuela y añade el hamamelis. Conserva en refrigeración.</p>
+                        <span class="benefit-tag">Calmante</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1044,7 +1428,7 @@
             </div>
             
             <div class="problems-grid">
-                <!-- HIDRATANTES (3) -->
+                <!-- HIDRATANTES (6) -->
                 <div class="problem-card" data-category="hidratantes">
                     <div class="problem-header mixed-skin-header">
                         <h3>Balance Hidratante</h3>
@@ -1093,7 +1477,55 @@
                     </div>
                 </div>
                 
-                <!-- MASCARILLAS (3) -->
+                <div class="problem-card" data-category="hidratantes">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Hidratante de Rosa Mosqueta</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Aceite de Rosa Mosqueta</h3>
+                        <ul>
+                            <li>2 cucharadas de aceite de rosa mosqueta</li>
+                            <li>3 gotas de aceite esencial de lavanda</li>
+                            <li>2 gotas de aceite esencial de manzanilla</li>
+                        </ul>
+                        <p>Mezcla los aceites. Aplica 2-3 gotas en las zonas secas del rostro, evitando la zona T.</p>
+                        <span class="benefit-tag">Regenerador</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="hidratantes">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Hidratante de Aguacate</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Crema de Aguacate</h3>
+                        <ul>
+                            <li>1/4 aguacate maduro</li>
+                            <li>1 cucharada de gel de aloe vera</li>
+                            <li>5 gotas de aceite esencial de incienso</li>
+                        </ul>
+                        <p>Machaca el aguacate y mezcla con el aloe vera y el aceite esencial. Aplica en zonas secas.</p>
+                        <span class="benefit-tag">Nutritivo</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="hidratantes">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Hidratante de Caléndula</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Crema de Caléndula</h3>
+                        <ul>
+                            <li>2 cucharadas de infusión de caléndula</li>
+                            <li>1 cucharada de aceite de almendras</li>
+                            <li>1 cucharadita de cera de abejas</li>
+                        </ul>
+                        <p>Derrite la cera de abejas y mezcla con los demás ingredientes. Bate hasta enfriar. Aplica según necesidad.</p>
+                        <span class="benefit-tag">Calmante</span>
+                    </div>
+                </div>
+                
+                <!-- MASCARILLAS (6) -->
                 <div class="problem-card" data-category="mascarillas">
                     <div class="problem-header mixed-skin-header">
                         <h3>Balance Natural</h3>
@@ -1142,7 +1574,55 @@
                     </div>
                 </div>
                 
-                <!-- EXFOLIANTES (3) -->
+                <div class="problem-card" data-category="mascarillas">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Mascarilla de Miel y Canela</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Mascarilla de Miel y Canela</h3>
+                        <ul>
+                            <li>2 cucharadas de miel</li>
+                            <li>1/2 cucharadita de canela en polvo</li>
+                            <li>1 cucharadita de jugo de limón (solo para zona T)</li>
+                        </ul>
+                        <p>Mezcla miel y canela. Aplica en todo el rostro, añadiendo limón solo en la zona T. Deja 15 minutos.</p>
+                        <span class="benefit-tag">Antibacterial</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="mascarillas">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Mascarilla de Papaya</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Mascarilla de Papaya y Avena</h3>
+                        <ul>
+                            <li>3 cucharadas de papaya triturada</li>
+                            <li>1 cucharada de avena molida</li>
+                            <li>1 cucharadita de miel</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica sobre el rostro y deja actuar 15 minutos. Enjuaga con agua tibia.</p>
+                        <span class="benefit-tag">Exfoliante suave</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="mascarillas">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Mascarilla de Aguacate</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Mascarilla de Aguacate y Miel</h3>
+                        <ul>
+                            <li>1/4 aguacate maduro</li>
+                            <li>1 cucharada de miel</li>
+                            <li>1 cucharadita de yogur natural</li>
+                        </ul>
+                        <p>Machaca el aguacate y mezcla con miel y yogur. Aplica especialmente en zonas secas. Deja 20 minutos.</p>
+                        <span class="benefit-tag">Nutritiva</span>
+                    </div>
+                </div>
+                
+                <!-- EXFOLIANTES (6) -->
                 <div class="problem-card" data-category="exfoliantes">
                     <div class="problem-header mixed-skin-header">
                         <h3>Exfoliación Adaptada</h3>
@@ -1191,7 +1671,55 @@
                     </div>
                 </div>
                 
-                <!-- TÓNICOS (3) -->
+                <div class="problem-card" data-category="exfoliantes">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Exfoliante de Café</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Exfoliante de Café y Miel</h3>
+                        <ul>
+                            <li>2 cucharadas de café molido</li>
+                            <li>1 cucharada de miel</li>
+                            <li>1 cucharada de aceite de jojoba (para zonas secas)</li>
+                        </ul>
+                        <p>Mezcla café y miel. Añade aceite de jojoba para las zonas secas. Aplica con masajes suaves.</p>
+                        <span class="benefit-tag">Energizante</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="exfoliantes">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Exfoliante de Avena</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Exfoliante de Avena y Leche</h3>
+                        <ul>
+                            <li>2 cucharadas de avena molida</li>
+                            <li>1 cucharada de leche</li>
+                            <li>1 cucharadita de miel</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica con suaves movimientos circulares. Enjuaga con agua tibia.</p>
+                        <span class="benefit-tag">Suavizante</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="exfoliantes">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Exfoliante de Almendras</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Exfoliante de Almendras y Miel</h3>
+                        <ul>
+                            <li>2 cucharadas de almendras molidas</li>
+                            <li>1 cucharada de miel</li>
+                            <li>1 cucharadita de aceite de argán</li>
+                        </ul>
+                        <p>Mezcla todos los ingredientes. Aplica con masajes circulares suaves. Enjuaga con agua tibia.</p>
+                        <span class="benefit-tag">Nutritivo</span>
+                    </div>
+                </div>
+                
+                <!-- TÓNICOS (6) -->
                 <div class="problem-card" data-category="tonicos">
                     <div class="problem-header mixed-skin-header">
                         <h3>Equilibrante</h3>
@@ -1237,6 +1765,54 @@
                         </ul>
                         <p>Machaca las hojas de menta en el hamamelis, añade el agua. Filtra después de 24 horas. Aplica en zona T.</p>
                         <span class="benefit-tag">Minimizador</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="tonicos">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Tónico de Manzanilla</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Tónico de Manzanilla</h3>
+                        <ul>
+                            <li>2 bolsitas de manzanilla</li>
+                            <li>1 taza de agua hirviendo</li>
+                            <li>1 cucharada de hamamelis</li>
+                        </ul>
+                        <p>Prepara una infusión fuerte de manzanilla. Cuando enfríe, añade el hamamelis. Aplica con algodón.</p>
+                        <span class="benefit-tag">Calmante</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="tonicos">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Tónico de Romero</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Tónico de Romero</h3>
+                        <ul>
+                            <li>2 ramitas de romero fresco</li>
+                            <li>1 taza de agua hirviendo</li>
+                            <li>1 cucharada de vinagre de manzana</li>
+                        </ul>
+                        <p>Infusiona el romero 15 minutos. Cuela y añade el vinagre. Aplica especialmente en zona T.</p>
+                        <span class="benefit-tag">Estimulante</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card" data-category="tonicos">
+                    <div class="problem-header mixed-skin-header">
+                        <h3>Tónico de Salvia</h3>
+                    </div>
+                    <div class="problem-content">
+                        <h3>Tónico de Salvia</h3>
+                        <ul>
+                            <li>1 cucharada de hojas de salvia fresca</li>
+                            <li>1 taza de agua hirviendo</li>
+                            <li>1 cucharada de agua de hamamelis</li>
+                        </ul>
+                        <p>Infusiona la salvia 10 minutos. Cuela y añade el hamamelis. Conserva en refrigeración.</p>
+                        <span class="benefit-tag">Regulador</span>
                     </div>
                 </div>
             </div>
@@ -1388,3 +1964,4 @@
     </script>
 </body>
 </html>
+                
